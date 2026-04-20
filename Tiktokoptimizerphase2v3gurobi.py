@@ -57,7 +57,10 @@ except ImportError:
 
 DATA_DIR = Path("data_tiktok")
 OUT_DIR  = Path("data_tiktok/optimization_results")
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+try:
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+except OSError:
+    pass  # Streamlit Cloud — read-only filesystem
 
 def _pick(primary, fallback):
     p = Path(primary)

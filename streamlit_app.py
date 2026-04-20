@@ -16,7 +16,7 @@ try:
     import Tiktokoptimizerphase2v3gurobi
 except ImportError as e:
     st.error(f"Tiktokoptimizerphase2v3gurobi import hatası: {e}")
-    sys.exit(1)
+    st.stop()
 
 # Import AHP/ANP module
 try:
@@ -29,7 +29,7 @@ try:
     )
 except ImportError as e:
     st.error(f"ahp_anp import hatası: {e}")
-    sys.exit(1)
+    st.stop()
 
 st.set_page_config(
     page_title="TikTok Influencer Seçimi — AHP/ANP + Knapsack",
