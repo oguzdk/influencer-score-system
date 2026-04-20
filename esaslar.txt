@@ -1,0 +1,1057 @@
+T.C. 
+ESKİŞEHİR TEKNİK ÜNİVERSİTESİ 
+MÜHENDİSLİK FAKÜLTESİ 
+ ENDÜSTRİ MÜHENDİSLİĞİ BÖLÜMÜ  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ENM457 ENDÜSTRİ MÜHENDİSLİĞİ BİTİRME PROJESİ I 
+ENM458 ENDÜSTRİ MÜHENDİSLİĞİ BİTİRME PROJESİ II 
+UYGULAMA ESASLARI 
+VE 
+TEZ YAZIM KILAVUZU 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Eylül 2025 
+Revizyon No:05 
+ 
+ 
+ 
+ 
+Revizyon No:4’te Yapılan Değişiklikler: 
+ 
+- 1. ara sınav ve 2. ara sınav  raporları kaldırılmış, yerine ara sınav raporu  (ara sınav notu) ve 
+dönem sonu ilk taslak raporu (ödev notu) getirilmiştir. 
+- Önkoşullar kılavuza eklenmiştir.  
+- Karmaşık problemin özellikleri, mühendislik tasarımında gerçekçi kısıtlar ve koşullar, ve 
+mühendislik meslek ilkeleri ile ilgili açıklamalar eklenmiştir  (Mühendislik Lisans Programları 
+Değerlendirme Ölçütleri 3.0). 
+- Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında değerlendirilmesi eklenmiştir.  
+- ENM 457 ve ENM 458 Sözlü Sunum ve Rapor Değerlendirmesi formları güncellenmiştir.  
+ 
+Revizyon No:5’te Yapılan Değişiklikler: 
+ 
+- Önkoşullar güncellenmiştir. 
+- İş-Zaman Çizelgesi ve Risk Yönetimi tabloları (bkz. Tablo 1 ve Tablo 2) eklenmiştir.  
+- ENM 457 ve ENM 458 Sözlü Sunum ve Rapor Değerlendirmesi formları güncellenmiştir. 
+- 6.6. Etik İlke ve Kurallara Uygunluk Beyannamesi Örneği ve 6.7 Üretken Yapay Zekâ Kullanım 
+Beyanı eklenmiştir.
+ 
+TANIM 
+UYGULAMA ESASLARI
+Bir akademik yıl içerisinde ENM 4 57 Endüstri Mühendisliği  Bitirme Projesi I  ve ENM 4 58 
+Endüstri Mühendisliği Bitirme Projesi II  olmak üzere iki dönemde verilen dersler, ESTÜ 
+Endüstri Mühendisliği Bölümü son sınıf öğrencileri tarafından gerçekleştirilen, imalat veya 
+hizmet sektöründeki kuruluşlar ile ortaklaşa yürüttüğü, sistem /süreç tasarlama /iyileştirme 
+ve ürün/hizmet tasarlama /iyileştirmeye yönelik projelerden oluşur. ENM4 57 ve ENM458 ile 
+öğrencilerin eğitimleri sürecinde almış oldukları derslerden edindikleri teorik bilgilerin gerçek 
+hayat problemlerine uygulanması amaçlanmaktadır. 
+ENM457 ve ENM4 58 en az 2 en fazla 3 öğrenciden oluşan proje grubu bir öğretim üyesinin 
+danışmanlığında belirledikleri konular kapsamında çalışır. Bölümümüzün mezuniyet öncesi iki 
+dönemlik zorunlu ve birbirinin devamı olan ENM457 ve ENM458 derslerinin her birinin ilgili 
+dönem sonunda değerlendirilmesi beklenir. ENM4 57 dersi başarılmadan ENM4 58 dersi 
+alınamaz. 
+ÖNKOŞUL 
+ENM 457 Endüstri Mühendisliği Bitirme Projesi I dersinin ön koşulları izleyen şekildedir: 
+-İlk dört yarıyıldaki tüm zorunlu derslerini başarmış olmak veya en az 180 AKTS kredilik dersi 
+başarmış olmaktır.  
+ENM 458 Endüstri Mühendisliği Bitirme Projesi II dersinin ön koşulları izleyen şekildedir: 
+-ENM 457 Endüstri Mühendisliği Bitirme Projesi I dersini başarmış olmalıdır.  
+ 
+KAPSAM ve PROJE AŞAMALARI 
+ 
+ENM457 ve ENM458 kapsamında öğrenciler bölüm öğretim üyelerinin çalıştıkları konuları 
+inceleyerek gruplarını oluşturur ve çalışmak istediği 5 öğretim üyesinin adını Ek 1’de verilen 
+dilekçeyi bir önceki dönem bölüm başkanlığı tarafından ilan edilen tarihte bölüm başkanlığına 
+sunar. Öğretim üyesi ve öğrenci grubu atamaları, ilgili dönem başında bölüm başkanlığınca ilan 
+edilir. 
+ENM457 ve ENM458 kapsamındaki projeler, imalat veya hizmet sektöründeki bir kuruluşun 
+tamamında veya belirli bir bölümünde yapılacak inceleme sonucu, belli bir sistemin /sürecin 
+tasarlanması/iyileştirilmesi veya ürünün/hizmetin tasarlanması/iyileştirilmesi konularını 
+kapsamaktadır. Projelerin gerçekleştirileceği kuruluşların kapsamında, imalat sanayii, inşaat, 
+sağlık, turizm, enerji, lojistik, eğitim, ekonomik planlama, banka ve sigortacılık, bilişim 
+sistemleri, perakendecilik, pazarlama, yatırım hizmetleri  ve satış gibi her çeşit örgütlü insan 
+faaliyetinin sürdürüldüğü firmalar ve kamusal kurumlar bulunur. Proje yapım aşamalarında 
+önerilecek tasarımların, değişikliklerin, gelişmelerin ve iyileştirmelerin geniş bir vizyonla 
+sunulmasına büyük önem verilir. 
+ 
+ENM457 ve ENM458 kapsamında yapılacak çalışmalar, öğrenci grubunun ve projeye atanacak 
+öğretim üyesinin ilgili kuruluşlara yapacakları ziyaretler ve öğrenci gruplarının yerinde 
+yapacakları çalışmalar şeklinde yürütülür. Öğrenciler bu kapsamda aşağıdaki aşamaları ve 
+termin sürelerini izleyeceklerdir: 
+ENM 457 ENDÜSTRİ MÜHENDİSLİĞİ BİTİRME PROJESİ I 
+1. HAFTALIK PLAN 
+ENM 457 Endüstri Mühendisliği Bitirme Projesi I dersinin haftalık planının aşağıdaki gibi 
+olması beklenmektedir. 
+Bir önceki dönem Danışman atamaları 
+1. Hafta Projenin belirlenmesi 
+2-6.Hafta Proje üzerinde çalışma 
+7. Hafta Ara sınav raporunun teslimi 
+7-12. Hafta Proje üzerinde çalışma 
+13. Hafta                     Dönem sonu ilk taslak raporunun teslimi 
+13.-14. Hafta Dönem sonu raporu üzerinde çalışma 
+14. Hafta Dönem sonu raporunun teslimi 
+15.-16. Hafta Dönem sonu sınavlarının ilk iki günü sözlü sunum 
+ 
+1.1. Projeden Beklenenler 
+2-6. Hafta arası öğrencilerden beklenenler: 
+▪ İşletme ve ele alınan sistem hakkında genel bilginin elde edilmesi, 
+▪ Proje verilerine ulaşılması ve değerlendirilmesi, 
+▪ Karmaşık mühendislik problemii olarak aşağıda verilen tarife uygun bir şekilde, problem 
+tarifinin yapılması, 
+▪ Proje, mühendislik tasarımında gerçekçi kısıtlar ve koşullarıii içermeli, 
+▪ Literatür araştırmasının kişi başı en az 5 makale olacak şekilde yapılması, 
+▪ Projenin girişimcilik ve yenilikçilik açısından katkısının değerlendirilmesi, 
+▪ Projenin topluma, sağlık ve güvenliğe, ekonomiye, sürdürülebilirlik ve çevreye 
+etkilerinin değerlendirilmesi, 
+▪ Projenin BM Sürdürülebilir Kalkınma Amaçlarıiii kapsamında, hangi amaca katkı 
+sağladığının belirlenmesi ve katkının değerlendirilmesi,  
+▪ Projenin mühendislik meslek ilkelerineiv dayandığının değerlendirilmesi, 
+▪ Yerel ve küresel standartlar, normlar, kurallar, kavramlar, prensipler kullanılıp 
+kullanılmadığının değerlendirilmesidir. 
+ 
+Mühendislik Lisans Programları Değerlendirme Ölçütleri 3.0: 
+ 
+i) Karmaşık mühendislik problemleri aşağıdaki özellikleri içerir.  
+ 
+a) Çözümü için matematik, fen bilimleri, temel mühendislik, bilgisayarla hesaplama ve ilgili 
+mühendislik disiplinine özgü konuları içerecek biçimde derinlemesine mühendislik bilgisi ve 
+bu bilgileri uygulama becerisi gerektirir.  
+b) Çözümü için çeşitli bilgi ve veri kaynaklarının ve tasarım yazılımlarının kullanımını 
+gerektirir.  
+c) Ayrıca, aşağıdaki özelliklerin bir kısmını veya tamamını içerir.  
+• Geniş kapsamlı ve/veya çelişen teknik, teknik olmayan konuları (etik, 
+sürdürülebilirlik, yasal, politik, ekonomik, toplumsal gibi) ve gelecekteki 
+gereksinimlerin dikkate alınmasını gerektirir. Çeşitli bağlamlarda önemli sonuçları 
+olabilir.  
+• Açıkça görülebilen bir çözümü yoktur; analizi ve modelleyip formüle etmek için soyut 
+düşünme, yaratıcılık ve özgünlük gerektirir.  
+• Sık karşılaşılmayan veya yeni bir problemdir.  
+• Yeni bir model veya yöntem geliştirme gerektirir.  
+• Profesyonel mühendislik standartları ve uygulama kurallarında tanımlanmaz. 
+• Farklı mühendislik disiplinleri, farklı alanlar ve/veya değişik ihtiyaçlara sahip farklı 
+paydaş grupları arasında işbirliği gerektirir. 
+• Sistem yaklaşımı gerektirebilecek, birçok bileşeni veya alt problemi olan üst düzey 
+problemleri içerir. 
+ 
+ii)Mühendislik Tasarımında Gerçekçi Kısıtlar ve Koşullar: Ekonomi, çevre sorunları, tasarımda sıfır 
+karbon salımı, yaşam döngüsü maliyeti, kaynakların yeniden kullanımı, sürdürülebilirlik, 
+üretilebilirlik, etik, sağlık, güvenlik, sosyal, hukuki ve politik boy utlar gibi birbiriyle çelişebilen, 
+teknik ve/veya teknik olmayan, geniş kapsamlı etmenler içinden tasarımın niteliğine bağlı olarak göz 
+önüne alınması gereken kısıtlar ve koşullar. 
+ 
+iii) BM Sürdürülebilir Kalkınma Amaçları: Birleşmiş Milletler (BM) tarafından tanımlanmış 
+aşağıdaki 17 hedef. (https://turkiye.un.org/tr/sdgs). 
+ 
+ 
+ 
+iv) Mühendislik Meslek İlkeleri: Mühendislik uygulamalarında kullanılan yerel ve küresel standartlar, 
+normlar, kurallar, kavramlar, prensipler, vb. meslek ilkeleri; mühendislerin, mühendislik ürün, süreç ve 
+hizmetlerini mesleki yetkinlik içerisinde tasarlarken  ve gerçekleştirirken topluma, çalıştığı kuruma ve 
+çalışanlarına, mesleğine ve genel olarak insanlığa yararlı olmayı hedeflemesini, diğer yandan insanlara 
+ve çevreye zarar vermeyecek biçimde sorumlu, ilgili yasalara ve mesleki kodlara uygun, saydam, yansız 
+ve mesleki saygınlığa uygun davranmayı içerir. 
+ 
+7-12. Hafta arası öğrencilerden beklenenler: 
+▪ Uygun yöntemlerin değerlendirilmesi ve kullanılacak yöntemin tarifi 
+▪  9 aylık iş-zaman çizelgesi ile proje planı ve yapılacakların B planı dahil olmak üzere 
+planlanmasıdır (bkz. Tablo 1 ve Tablo 2). 
+ 
+13-14. Hafta arası öğrencilerden beklenenler: 
+▪ Dönem sonu ilk taslak raporunun üzerinde danışman öğretim elemanından alınan geri 
+dönüşler neticesinde düzeltmeleri yapılmalıdır.  
+▪ Dönem sonu raporunun Endüstri Mühendisliği tez yazım kılavuzuna uygun 
+hazırlanması ve dönem sonu sınavından 1 hafta önce danışmanlarına ve jüri üyelerine 
+raporun elektronik ortamda iletilmelidir. Endüstri Mühendisliği tez yazım yönergesi Ek- 
+2’de verilmiştir. Rapor hazırlanırken verilen  referanslar, içerik ve yapılan çalışmaların 
+özgünlüğü, mesleki ve etik sorumluluğa uygun olmalıdır. 
+ 
+
+Tablo 1. İş-Zaman Çizelgesi 
+ 
+No İş Paketlerinin Adı 
+Zaman 
+Aralığı 
+(..-.. Ay) 
+İlgili İş Paketinde Takım 
+Lideri Öğrencinin Adı 
+Soyadı 
+İlgili İş Paketinde 
+Ekip Üyesi Öğrenci(ler)in 
+Adı Soyası 
+1  
+ 
+  
+2  
+ 
+  
+…  
+ 
+  
+ 
+ 
+Tablo 2. Risk Yönetim Tablosu 
+ 
+ No En Büyük Riskler Risk Yönetimi (B Planı) 
+1   
+2   
+…   
+ 
+ 
+ 
+Şekil 1. ENM457 Endüstri Mühendisliği Bitirme Projesi I dersinin akış şeması 
+ENM457 danışmanın ile birlikte proje konunu 
+belirle 
+Arasınav haftası rapor teslim et 
+ (bkz. 2. Değerlendirme) 
+Proje üzerinde çalış 
+(bkz. 1.1 Projeden Beklenenler) 
+Proje üzerinde çalış 
+(bkz. 1.1 Projeden Beklenenler) 
+Sözlü sunum hazırla  
+(bkz. 2. Değerlendirme) 
+13. haftanın sonunda dönem sonu ilk rapor taslağını 
+teslim et. 
+Dönem sonu sınavı haftasından 1 hafta önce rapor 
+teslim et 
+(bkz. 1.2 Dönem Sonu Raporu için Önerilen 
+Başlıklar) 
+1.2.  Dönem Sonu Rapor için Önerilen Ana Başlıklar 
+ 
+Özet 
+1. Giriş 
+1.1. İşletme ve problem hakkında genel bilgiler 
+İşletmenin kısaca tarihçesi ve çalışma alanı anlatılmalı ve işletmede ele alınan 
+problem sistem hakkında bilgi verilmelidir. Ele alınan sistemdeki problem tarif 
+edilmeli, problem ile ilgili elde edilen verilerden bahsedilmelidir. 
+1.2. Literatür Taraması 
+Ele alınan probleme yönelik literatürde yer alan makaleler problem tarifi, 
+problemi çözmek için geliştirilen model ve yöntemler vb. gibi konuları içerecek 
+şekilde özetlenmelidir. İncelenen ve raporda bahsedilen makale sayısı kişi 
+başına en az 5 adet olmalıdır. Ele alınan problemin literatürde yer alan 
+çalışmalardan farklılıklarından ve/veya benzerliklerinden bahsedilmelidir. 
+1.3. Projenin girişimcilik ve yenilikçilik açısından katkısı 
+1.4. Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında, topluma, sağlık 
+ve güvenliğe, ekonomiye, sürdürülebilirlik ve çevreye etkileri 
+2. Problemin Tarifi 
+Projede problem tarifi detaylı olarak anlatılmalı, işletmeden alınacak veriler 
+planlanmalı, problemin tarifi için veriler toplanmalı, analiz edilerek problem Endüstri 
+Mühendisliği açısından ortaya konmalıdır. 
+3. Kullanılan/ Önerilen Yöntem 
+Literatürden seçilen uygun yöntemler değerlendirilmeli, probleme uygun olma 
+nedenleri açıklanmalıdır. Uygun yöntemlerden problemin çözümü için seçilen yöntem 
+ayrıntılı olarak açıklanmalıdır. 
+4. Sonuç ve Öneriler 
+Proje planı olarak 9 aylık faaliyet -zaman çizelgesi  (bkz. Tablo 1 ve Tablo 2)  Ek’te 
+verilmelidir. Bundan sonra yapılacaklar  planlanmalı. Planların gerçekleşmemesi 
+durumunda yöntem veya çözümü hakkında bir B planı oluşturulmalıdır. 
+Kaynakça 
+Kullanılan kaynaklar liste halinde verilmelidir. 
+Ekler 
+Ek-1: Proje planı 
+Ek-2…: Diğerleri. 
+2. DEĞERLENDİRME 
+ 
+• Ara sınav (%20): Ara sınav haftasına kadar yapılmış olan çalışmaları kapsayan bir 
+rapor hazırlanır. Rapor Ara sınav haftasında yapılan duyuruda belirtilen tarih ve saate 
+kadar online olarak toplanır ve danışmana iletilir. Rapor danışman tarafından 1.1. 
+maddesindeki beklenenler dahilinde değerlendirilir. 
+• Ödev(%20): Dönem boyunca yapılmış olan çalışmaları kapsayan bir rapor hazırlanır. 
+Rapor 13. Hafta da yapılan duyuruda belirtilen tarih ve saate kadar online olarak toplanır 
+ve danışmana iletilir. Rapor danışman tarafından 1.1. maddesindeki beklenenler 
+dahilinde değerlendirilir. 
+• Dönem sonu sınavı (%60): Değerlendirme kriterlerine göre öğretim üyeleri ve 
+danışmandan oluşan jüri tarafından verilen notların ortalamasından (%60) oluşur. Jüride 
+yer alan öğretim elemanları tarafından verilen notun %60’ı, araştırma görevlileri 
+tarafından verilen notun %40’ı alınır. Daha önceki dönemlerde yapılan yazılı sınav 
+kaldırılmıştır. 
+Sözlü sunum, atanan jüri karşısında 15 dakikası sunum 5 dakikası soru -cevap olacak 
+şeklinde toplam 20 dakikalık bir sunum olarak gerçekleştirilir. Öğrenciler sunumlarını 
+1 gün öncesinden ilgili elektronik ortama aktararak kontrol eder ve sunuma hazır hale 
+getirirler. Öğrenciler sunum zamanından en az 5 dakika önce sunum yapılacak sınıfta 
+hazır bulunurlar. 
+Sözlü sunum için jüriye atanan jüri üyelerinin mazeret bildirmediği sürece katılması 
+gerekmektedir. 
+ 
+ 
+Sözlü sunum ve dönem sonu raporunu aşağıdaki kriterlere göre değerlendirilir: 
+ 
+• İşletme ve ele alınan sistem hakkında genel bilgi (%5) 
+• Projenin karmaşık mühendislik problemi olarak tarif edilmesi (%10) 
+• Projenin mühendislik tasarımında gerçekçi kısıtları ve koşulları içermesi (%10) 
+• Literatür araştırmasının yeterliliği (Kişi başına en az 5 makale) (%15) 
+• Projenin girişimcilik ve yenilikçilik açısından katkısının tartışılması (%5) 
+• Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında, topluma, sağlık ve 
+güvenliğe, ekonomiye, sürdürülebilirlik ve çevreye etkilerinin tartışılması (%5) 
+• Uygun tekniklerin, kaynakların ve modern mühendislik ve bilişim araçlarının, 
+sınırlamalarının da farkında olarak seçilmesi ve kullanımı (%15) 
+• Proje Planı ve yapılacakların planlanması (1 yıllık iş paketleri- zaman çizelgesi, iş  
+paketlerinin sorumlularının belirlenmesi, B planı) (%10) 
+• Sunum kalitesi ve süre yönetimi (%10) 
+• Rapor düzeni ve yazım kurallarına uygunluğu (%15) 
+ 
+ 
+Harf notları alt sınırları; 
+ 
+AA AB BA BB BC CB CC CD DC DD 
+90 85 80 72 69 65 62 59 55 51 
+ 
+Not: Öğrenciler sunumlara girmek zorundadırlar. Sunumlara girmeyenlerin başarı notu 
+FF olarak geçer. 
+ENM 457 Endüstri Mühendisliği Bitirme Projesi I Dersinin Öğrenim Çıktıları 
+ 
+1. Proje kapsamında problemin tanımını yapar.  
+2. Projenin ekonomik, çevresel ve sosyal etkilerini tanımlar.  
+3. Proje kapsamındaki problem ile ilgili literatürden haberdar olur. 
+4. Proje için uygun çözüm yaklaşımlarını belirler. 
+5. Uygun çözüm yaklaşımları ile problemi çözer.    
+ 
+Form No: ENM_YON_005_1 
+ENM 457 Endüstri Mühendisliği Bitirme Projesi I 
+Sözlü Sunum ve Rapor Değerlendirmesi 
+Öğrenci Ad-Soyadları: 
+1. 
+ 
+2. 
+ 
+3. 
+ 
+Tarih: 
+ 
+ 
+Kriterler ÖÇ ile 
+ilişkisi 
+Puan Öğrenci 
+1 
+Öğrenci 
+2 
+Öğrenci 
+3 
+İşletme ve ele alınan sistem hakkında genel 
+bilgi 
+ÖÇ1 5    
+Projenin karmaşık mühendislik problemi olarak 
+tarif edilmesi 
+ÖÇ1 10    
+Projenin mühendislik tasarımında gerçekçi 
+kısıtları ve koşulları içermesi 
+ÖÇ1 10    
+Literatür araştırmasının yeterliliği (Kişi başına 
+en az 5 makale) 
+ÖÇ3 15    
+Projenin girişimcilik ve yenilikçilik  açısından 
+katkısının tartışılması 
+ÖÇ2 5    
+Projenin BM Sürdürülebilir Kalkınma 
+Amaçları kapsamında, topluma, sağlık ve 
+güvenliğe, ekonomiye, sürdürülebilirlik ve 
+çevreye etkilerinin tartışılması 
+ÖÇ2 5    
+Uygun tekniklerin, kaynakların ve modern 
+mühendislik ve bilişim araçlarının, 
+sınırlamalarının da farkında olarak seçilmesi 
+ve kullanımı 
+ÖÇ4 15    
+Proje Planı ve yapılacakların planlanması 
+(Kılavuzda belirtildiği şekilde 1 yıllık iş 
+paketleri-zaman çizelgesi, B planı) 
+ÖÇ4 10 
+ 
+   
+Sunum kalitesi ve süre yönetimi ÖÇ5 10    
+Rapor düzeni ve yazım kurallarına uygunluğu ÖÇ5 15    
+Aldığı Not    
+ 
+                                         Değerlendirmeyi Yapan Adı Soyadı:  
+                                                                                                    İmza: 
+ENM 458 ENDÜSTRİ MÜHENDİSLİĞİ BİTİRME PROJESİ II 
+ 
+1. HAFTALIK PLAN 
+ENM458 Endüstri Mühendisliği Bitirme Projesi II dersi kapsamında öğrenciler, ENM457 
+dersi kapsamında  topladıkları verileri kullanarak belirledikleri yöntem/model ile problemi 
+çözme ve yaptıkları çözümleri genişleterek işletmede çalıştıkları bölüm ile ilgili daha kapsamlı 
+ve gerçekçi koşulları dikkate alarak sayısal sonuçları analiz edip yorumlamalılar. 
+ 
+ENM458 Endüstri Mühendisliği Bitirme Projesi II  dersinin haftalık planının aşağıdaki gibi 
+olması beklenmektedir. 
+ 
+1-6.Hafta Proje üzerinde çalışma 
+7. Hafta Ara sınav raporunun teslimi 
+8-12. Hafta Proje üzerinde çalışma 
+  13. Hafta                     Dönem sonu ilk taslak raporunun teslimi 
+13.-14. Hafta Dönem sonu raporu üzerinde çalışma            
+14. Hafta Dönem sonu raporunun teslimi 
+15. Hafta Dönem sonu sınavlarının ilk iki günü sözlü sunum 
+16. Hafta Dönem sonu harf notları teslimi için son tarihe kadar tez teslimi 
+ 
+1.1. Projeden Beklenenler 
+1-6. Hafta arası öğrencilerden beklenenler: 
+▪ Proje planının gözden geçirilmesi, gerekiyorsa revizyonunun yapılması (bkz. Tablo 1 ve 
+Tablo 2), 
+▪ Sistem/problem verilerinin toplanması ve analizinin yapılması, 
+▪ Probleme ilişkin çözüm önerileri, uygun yöntemlerin/modellerin değerlendirilmesi ve 
+kullanılacak yöntemin/modelin seçimi, 
+▪ Projenin girişimcilik ve yenilikçilik açısından katkısının tartışılması, 
+▪ Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında, topluma, sağlık ve 
+güvenliğe, ekonomiye, sürdürülebilirlik ve çevreye etkilerinin tartışılmasıdır. 
+8-12. Hafta arası öğrencilerden beklenenler: 
+▪ Yöntemin uygulanması/modelin açıklanması ve çözülmesi, 
+▪ Sonuçların yorumlanması ve iyileştirme önerilerinin sunulmasıdır. 
+13-14. Hafta arası öğrencilerden beklenenler: 
+▪ Dönem sonu ilk taslak raporunun üzerinde danışman öğretim elemanından alınan geri 
+dönüşler neticesinde düzeltmeleri yapılmalıdır.  
+▪ Dönem sonu raporunun Endüstri Mühendisliği tez yazım kılavuzu uygun hazırlanması 
+ve dönem sonu sınavından 1 hafta önce danışmanlarına ve jüri üyelerine raporun 
+elektronik ortamda iletilmelidir. Endüstri Mühendisliği tez yazım yönergesi Ek -2’de 
+verilmiştir. Rapor hazırlanırken verilen referanslar, içerik ve yapılan çalışmaların 
+özgünlüğü, mesleki ve etik sorumluluğa uygun olmalıdır. 
+ 
+ 
+ 
+ 
+ 
+Şekil 2.ENM458 Endüstri Mühendisliği Bitirme Projesi II dersi akış şeması 
+Ara sınav haftası rapor teslim et (bkz. 
+2. Değerlendirme) 
+Proje üzerinde çalış 
+(bknz. 1.1 Projeden Beklenenler) 
+Proje üzerinde çalış 
+(bknz. 1.1 Projeden Beklenenler) 
+Proje üzerinde çalış 
+(bknz. 1.1 Projeden Beklenenler) 
+Sözlü sunum hazırla  
+(bkz. 2. Değerlendirme) 
+13. haftanın sonunda dönem sonu ilk rapor taslağını 
+teslim et. 
+(bkz. 1.1 Projeden Beklenenler) 
+Dönem sonu sınavı haftasından 1 hafta önce rapor 
+teslim et 
+(bknz. 1.2 Dönem Sonu Raporu için Önerilen 
+Başlıklar) 
+Tezi teslim et  
+(bkz. 3. Tez Teslimi) 
+(bkz. Tez Yazım Kılavuzu)  
+1.2. Dönem Sonu Rapor için Önerilen Ana Başlıklar 
+ENM 457’de hazırlanan rapora ilave/düzeltme olarak; 
+2. Problemin Detaylı ve Sayısal Olarak Tarifi 
+3. Problemin Çözümü İçin Seçilen Yöntemin Detaylı Tanıtımı 
+4. Sayısal Sonuçlar 
+Problem için seçilen yöntemin/modelin nasıl uygulandığı açıklanmalı ve sayısal 
+çözümler verilmelidir. 
+5. Sonuç ve Öneriler 
+ 
+2. DEĞERLENDİRME 
+ 
+• Ara sınav (%20): Ara sınav haftasına kadar yapılmış olan çalışmaları kapsayan bir 
+rapor hazırlanır. Rapor Ara sınav haftasında yapılan duyuruda belirtilen tarih ve saate 
+kadar online olarak toplanır ve danışmana iletilir. Rapor danışman tarafından 1.1. 
+maddesindeki beklenenler dahilinde değerlendirilir. 
+• Ödev(%20): Proje kapsamında yapılmış olan çalışmaları kapsayan bir rapor hazırlanır. 
+Rapor 13. Hafta da yapılan duyuruda belirtilen tarih ve saate kadar online olarak toplanır 
+ve danışmana iletilir. Rapor danışman tarafından 1.1. maddesindeki beklenenler 
+dahilinde değerlendirilir.  
+• Dönem sonu sınavı (%60): Değerlendirme kriterlerine göre öğretim üyeleri ve 
+danışmandan oluşan jüri tarafından verilen notların ortalamasından (%60) oluşur. Jüride 
+yer alan öğretim elemanları tarafından verilen notun %60’ı, araştırma görevlileri 
+tarafından verilen notun %40’ı alınır. Daha önceki dönemlerde yapılan yazılı sınav 
+kaldırılmıştır. 
+Sözlü sunum, atanan jüri karşısında 15 dakikası sunum 5 dakikası soru -cevap olacak 
+şeklinde toplam 20 dakikalık bir sunum olarak gerçekleştirilir. Öğrenciler sunumlarını 
+1 gün öncesinden ilgili elektronik ortama aktararak kontrol eder ve sunuma hazır hale 
+getirirler. Öğrenciler sunum zamanından en az 5 dakika önce sunum yapılacak sınıfta 
+hazır bulunurlar. 
+Sözlü sunum için jüriye atanan jüri üyelerinin mazeret bildirmediği sürece katılması 
+gerekmektedir. 
+Sözlü sunum ve dönem sonu raporunu aşağıdaki kriterlere göre değerlendirilir: 
+ 
+• Proje Planı ve yapılacakların planlanması (1 yıllık iş paketleri- zaman çizelgesi, iş  paketlerinin 
+sorumlularının belirlenmesi, B planı) (%5) 
+• Sistem verilerinin toplanması ve analizi (%10) 
+• Ele alınan sistemin ve karmaşık problemin mühendislik tasarımında gerçekçi kısıtlar ve 
+koşulları içerecek şekilde tarifindeki yeterlilik/kapsam (%5) 
+• Probleme ilişkin çözüm önerileri, uygun yöntemlerin/modellerin değerlendirilmesi ve 
+kullanılacak yöntemin/modelin seçimi (%10) 
+• Uygun tekniklerin, kaynakların ve modern mühendislik ve bilişim araçlarının, sınırlamalarının 
+da farkında olarak kullanımı ve çözümün elde edilmesi (%20) 
+• Sonuçların yorumlanması ve iyileştirme önerilerinin sunulması (%15) 
+• Projenin girişimcilik ve yenilikçilik açısından katkısının tartışılması (%5) 
+• Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında, topluma, sağlık ve güvenliğe, 
+ekonomiye, sürdürülebilirlik ve çevreye etkilerinin tartışılması (%5) 
+• Sunum kalitesi ve süre yönetimi (%10) 
+• Rapor düzeni ve yazım kurallarına uygunluğu (%10) 
+• Proje Fuarına Katılım (%5) 
+Harf notları alt sınırları; 
+ 
+AA AB BA BB BC CB CC CD DC DD 
+90 85 80 72 69 65 62 59 55 51 
+ 
+Not: Öğrenciler sunumlara ve yazılı sınavlara girmek zorundadırlar. Sunumlara ve 
+yazılı sınavlara girmeyenlerin başarı notu FF olarak geçer. 
+ 
+3. TEZ TESLİMİ 
+Her öğrenci grubu, 
+ 
+1. ENM458 dersi dönem sonu raporu, proje danışmanına uygunluğu kontrol 
+ettirilmelidir ve dijital kopyasını proje danışmanına vermelidir. 
+2. Tüm bu işlemler akademik takvimde belirtilen dönem sonu harf notlarının 
+teslimi için son güne kadar yapılmalıdır. Aksi taktirde harf notu verilmeyecektir. 
+ 
+4. ENM458 DÖNEM SONU RAPORUNUN SON HALİ İÇİN ÖNERİLEN 
+ANA BAŞLIKLAR: 
+Özet 
+1. GİRİŞ 
+Problemin ortaya çıkışı, problemi çözmenin faydaları, katkıları, problemin ortaya 
+konması anlatılmalı. 
+1.1. Literatür Taraması 
+Ele alınan probleme yönelik literatürde yer alan makaleler problem tarifi, problemi 
+çözmek için geliştirilen model ve yöntemler vb. gibi konuları içerecek şekilde 
+özetlenmelidir. İncelenen makale sayısı kişi aşına en az 5 adet olmalıdır. Ele alınan 
+problemin literatürde yer alan çalışmalardan farklılıklarından ve/veya 
+benzerliklerinden bahsedilmelidir. 
+1.2. Problemin Kısaca Tarifi 
+Projede ele alınan problem için literatürden seçilen uygun yöntemler/modeller 
+değerlendirilmeli, yöntemlerden/modellerden problemin çözümü için seçilen 
+yöntem/model seçilmelidir. 
+1.3. Projenin girişimcilik ve yenilikçilik açısından katkısı 
+1.4. Projenin BM Sürdürülebilir Kalkınma Amaçları kapsamında, topluma, 
+sağlık ve güvenliğe, ekonomiye, sürdürülebilirlik ve çevreye etkileri 
+ 
+2. … YÖNTEMİ 
+Yöntemin probleme uygunluğun tartışılması, seçilme nedenleri, ilk kim tarafından 
+ortaya atıldığı, kimlerin geliştirdiği, yöntemin faydaları, yöntemin adımları, varsa 
+geliştirme safhaları, açıkça tarifi. 
+ 
+3. … UYGULANMASI 
+Problemin işletme için tarifi yapılmalıdır.  
+3.1. İşletme ve Problem Hakkında Genel Bilgiler 
+İşletmenin kısaca tarihçesi ve çalışma alanı anlatılmalı ve işletmede ele alınan sistem 
+hakkında bilgi verilmelidir. Ele alınan sistemdeki problem tarif edilmeli, problem ile 
+ilgili elde edilen verilerden bahsedilmelidir. Verilerin analizi yapılmalıdır. 
+3.2. ..Yönteminin .. Uygulanması 
+Problem için seçilen yöntemin/modelin nasıl uygulandığı açıklanmalı ve çözümler 
+verilmelidir. Sayısal sonuçlara yer verilmeli, sonuçlar karşılaştırılmalı 
+4. SONUÇ VE ÖNERİLER 
+Elde edilen sonuçlar yorumlanmalı ve bu sonuçlara bağlı olarak iyileştirme 
+önerilerinden bahsedilmelidir. 
+ 
+KAYNAKÇA 
+Kullanılan kaynaklar liste halinde verilmelidir. 
+EKLER 
+Ek -1 Proje Planı 
+Ek-2… 
+ENM 458 Endüstri Mühendisliği Bitirme Projesi II Dersinin Öğrenim Çıktıları 
+ 
+1. Öğrenci proje kapsamında ele aldığı problemlere yönelik çözüm yaklaşımları geliştirir.  
+2. Öğrenci problem parametrelerini belirler ve problemi çözer.  
+3. Probleme dair duyarlılık ve neden-sonuç analizlerini yapar. 
+4. Sonuçları değerlendirir ve iyileştirme önerilerini belirler.  
+5. Projeyi tez formatında rapor haline getirir.  
+ 
+Form No: ENM_YON_005_2 
+ 
+ENM 458 Endüstri Mühendisliği Bitirme Projesi II 
+Sözlü Sunum ve Rapor Değerlendirmesi 
+ 
+Öğrenci Ad-Soyadları: 
+1. 
+ 
+2. 
+ 
+3. 
+ 
+Tarih: 
+ 
+Kriterler ÖÇ ile 
+ilişkisi 
+Puan Öğrenci 
+1 
+Öğrenci 
+2 
+Öğrenci 
+3 
+Proje Planı ve yapılacakların planlanması 
+(Kılavuzda belirtildiği şekilde 1 yıllık iş 
+paketleri- zaman çizelgesi, B planı) 
+ÖÇ1 5    
+Sistem verilerinin toplanması ve analizi ÖÇ1 10    
+Ele alınan sistemin ve karmaşık problemin 
+mühendislik tasarımında gerçekçi kısıtlar ve 
+koşulları içerecek şekilde tarifindeki 
+yeterlilik/kapsam 
+ÖÇ1 5    
+Probleme ilişkin çözüm önerileri, uygun 
+yöntemlerin/modellerin değerlendirilmesi ve 
+kullanılacak yöntemin/modelin seçimi 
+ÖÇ2 10    
+Uygun tekniklerin, kaynakların ve modern 
+mühendislik ve bilişim araçlarının, 
+sınırlamalarının da farkında olarak kullanımı  
+ve çözümün elde edilmesi 
+ÖÇ2 20    
+Sonuçların yorumlanması ve iyileştirme 
+önerilerinin sunulması 
+ÖÇ4 15    
+Projenin girişimcilik ve yenilikçilik  açısından 
+katkısının tartışılması 
+ÖÇ4 5    
+Projenin BM Sürdürülebilir Kalkınma 
+Amaçları kapsamında, topluma, sağlık ve 
+güvenliğe, ekonomiye, sürdürülebilirlik ve 
+çevreye etkilerinin tartışılması 
+ÖÇ4 5 
+ 
+   
+Sunum kalitesi ve süre yönetimi ÖÇ5 10    
+Rapor düzeni ve yazım kurallarına uygunluğu ÖÇ5 10    
+Proje Fuarına Katılım ÖÇ5 5    
+Aldığı Not    
+ 
+                                          Değerlendirmeyi Yapan Adı Soyadı: 
+                                                                                                    İmza: 
+EK 1. Danışman Tercih Dilekçesi 
+ 
+ESKİŞEHİR TEKNİK ÜNİVERSİTESİ 
+ 
+ENDÜSTRİ MÜHENDİSLİĞİ BÖLÜM BAŞKANLIĞINA 
+ 
+ 
+ 
+Bölümde açılan ENM 457 Endüstri Mühendisliği Bitirme Projesi I ve ENM 458 Endüstri Mühendisliği 
+Bitirme Projesi II derslerini , belirtilen grup üyeleri olarak öncelik sırasına göre aşağıda verilen öğretim 
+üyelerinden birinin danışmanlığında almak istiyoruz.  
+ 
+Gereğini bilgilerinize sunarız.  
+ 
+         
+ 
+Grup Üyeleri Ad-Soyad    İmza 
+ 
+1.    
+2.     
+3.      
+ 
+ 
+Öğretim Üyeleri Ad-Soyad : 
+ 
+1.  
+2.  
+3.  
+4.  
+5.  
+ 
+ 
+ 
+Not 1: 3 kişiden az olan gruplar Bölüm Yönetimi tarafından 3 kişiye tamamlanacak şekilde birleştirilebilir.  
+ 
+Not 2:  Bölüm Yönetimi öğretim üyelerinin grup sayılarının fazla olması gibi sebeplerle grupları burada 
+tercih edilen öğretim üyeleri dışında bir öğretim üyesine atayabilir.  
+ 
+  
+EK 2. 
+TEZ YAZIM KILAVUZU 
+Tez yazım yönergesi “Eskişehir Teknik Üniversitesi Lisansüstü Tez Yazım Kılavuzu” (Temmuz 
+2018) baz alınarak hazırlanmıştır. 
+1. SAYFA ÖLÇÜSÜ 
+ 
+• Sayfa A4 boyutunda olmalıdır. 
+• Sayfa alt kenarından 2,5cm ve üst kenarından 3 cm, sağ kenarından 2,5 cm ve sol 
+kenarından 3,5 cm boşluk bırakılmalı ve kalan kısım yazı alanı olarak kullanılmalıdır. 
+ 
+2. YAZI BİÇİMİ 
+ 
+• Metin Times New Roman yazı formatında olmalıdır. 
+• Ana metin 12 punto büyüklüğünde olmalıdır. 
+• 1,5 satır aralığında ve iki yana yaslanmış olmalıdır. 
+• Her paragraf soldan 1cm içeriden (satır başından) başlar. 
+• Tablo/çizelge ile şekil ve görsellerde ve doğrudan uzun aktarmalarda yazı karakteri 10 
+punto büyüklüğünde olmalıdır. 
+• Metin içindeki bir düşünceyi açıklayan dinotlar 9 punto büyüklüğünde olmalıdır. 
+• Metin dik ve normal harflerle yazılır, kalın (bold) harfler başlıklarda kullanılır. 
+• İtalik yazı karakteri yalnızca gerekli durumlarda (Latince isim, kısaltmalar, teori/tanım 
+vb.) kullanılabilir. 
+• Noktalama işaretlerinden (kesme işareti, parantez içi kullanım, eğik çizgi, kısa çizgi 
+dışında) sonra bir karakter boşluk bırakılmalıdır. 
+ 
+3. BAŞLIKLAR 
+ 
+• Başlıklardan sonra “3 nokta (nk)” aralık verilmelidir. 
+• Başlıkların tamamı sola dayalı olmalıdır. 
+Başlık formatı örnekleri; 
+ 
+3. YÖNTEM VE UYGULAMA (BİRİNCİ DÜZEY BAŞLIK) 
+3.1. Araştırmanın Yöntemi ve Uygulanması (İkinci Düzey Başlık) 
+3.1.1. Araştırmanın veri toplama araçları (Üçüncü düzey başlık) 
+3.1.1.1. Veri toplama aracının hazırlanması (Dördüncü düzey başlık) 
+3.1.1.1.1. Uzman panel (Beşinci düzey başlık) 
+4. TABLOLAR/ÇİZELGELER İLE ŞEKİLLER VE GÖRSELLER 
+ 
+• 10 punto büyüklüğünde yazılmalıdır. 
+• Numaralar, ilgili bölüm içinde, bölüm numarası ilk numara olmak koşuluyla 
+numaralandırılır (1.1., 3.2., 4.3., …). 
+• Bir sayfayı aşan büyüklükteki tablo/çizelgelerde 2. sayfada tablo/çizelge numarası ve 
+açıklaması yazılarak tablo/çizelge numarası ile açıklaması arasına parantez içinde 
+(Devam) yazılmalıdır. 
+• “Tablo/çizelge ile şekil ve görsel”den sonra 1 boşluk verilir. 
+Tablo örneği; 
+ 
+Tablo 4.1. Yöntemlerin Karşılaştırılması 
+ 
+Yöntemin adı Parametre Sayısı Problem Türü 
+Yöntem 1 2 Doğrusal 
+Yöntem 2 4 Doğrusal ve Doğrusal Olmayan 
+Yöntem 3 3 Doğrusal olmayan 
+Kaynak: Winston, 2003 (varsa) 
+5. SAYFALARIN NUMARALANDIRILMASI 
+ 
+• Sayfa numaraları, sayfanın alt ve ortasında yer alır. 
+• Ön bölümleri oluşturan sayfalar, i, ii, iii, iv, … ile numaralandırılır. 
+• “Başlık Sayfası” ile “Juri Onay Sayfası”na numara yazılmaz ancak bu sayfalar i. ve ii. 
+sayfa olarak sayılır. 
+• Sayfa numaralandırması, “Özet” sayfasından itibaren iii ile başlar. 
+• Tez ana metnini oluşturan tüm sayfalara rakamla (1,2,3,...) sayfa numarası verilir. 
+• Numaralandırma 11 punto büyüklüğündedir. 
+• Sayfaların numaralandırılmasında rakam dışında herhangi bir işaret kullanılmaz. 
+6. TEZ ÖN BÖLÜMÜ 
+ 
+Tezin ön bölümü, 
+ 
+• İç Kapak Sayfası 
+• Başlık Sayfası 
+• Jüri Onay Sayfası 
+• Özet (Tek Sayfa) 
+• Abstract (Tek Sayfa) 
+• Etik İlke ve Kurallara Uygunluk Beyannamesi 
+• Üretken Yapay Zekâ Kullanım Beyanı 
+• Önsöz, Teşekkür veya İthaf Sayfası (isteğe bağlı) 
+• İçindekiler 
+• Tablolar/Çizelgeler Dizini 
+• Şekiller Dizini 
+• Görseller Dizini 
+• Simgeler/Kısaltmalar Dizini 
+sayfalarından oluşur. 
+6.1. İç Kapak Sayfası 
+İç kapak sayfasında yer alan yazı cilt kapak sayfasında yer alan boşluk kısmından 
+görülmelidir. 
+ 
+ 
+ 
+3,0 cm 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3,5 cm 2,5 cm 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TEZİN ADI 
+Lisans Tezi 
+ 
+Öğrencinin Adı-SOYADI 
+Eskişehir, YIL 
+ 
+ 
+ 
+ 
+ 
+2,5 cm 
+6.2. Başlık Sayfası 
+ 
+Başlık Sayfası örneği; 
+ 
+TEZİN ADI 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Öğrencinin Adı-SOYADI 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LİSANS TEZİ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Danışman: Unvanı, Adı-SOYADI 
+(İkinci Danışman: Unvanı, Adı-SOYADI) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Eskişehir Teknik Üniversitesi 
+Mühendislik Fakültesi 
+Endüstri Mühendisliği Bölümü 
+Ay, Yıl 
+6.3. Jüri Onay Sayfası 
+ 
+Jüri Onay Sayfası örneği; 
+ 
+JÜRİ ONAYI 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+..................................’nın “.................................................................................. 
+...………..........................” başlıklı tezi .../.../20.. tarihinde aşağıdaki jüri 
+tarafından değerlendirilerek Eskişehir Teknik Üniversitesi Mühendislik 
+Fakültesi Endüstri Mühendisliği Lisans Tezi olarak kabul edilmiştir. 
+   
+ 
+ 
+Unvanı-Adı Soyadı 
+ 
+ 
+ 
+İmza 
+Üye (Tez Danışmanı) : …………………………… …………….. 
+Üye : ……………………………. ……………. 
+Üye : …………………………… ……………. 
+Üye (gerektiği kadar 
+çoğaltılabilir) 
+: ……………………………. …………….. 
+6.4. Özet 
+ 
+Özet örneği; 
+ÖZET 
+TEZİN ADI 
+ 
+ 
+ 
+Öğrencinin Adı-SOYADI 
+Endüstri Mühendisliği 
+Eskişehir Teknik Üniversitesi, Mühendislik Fakültesi, Ay, Yıl 
+Danışman: Unvanı, Adı-SOYADI 
+(İkinci Danışman: Unvanı, Adı-SOYADI) 
+ 
+................................................................................................................................. 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+ 
+Anahtar Sözcükler: Anahtar sözcük 1, Anahtar sözcük 2, Anahtar sözcük 3, Anahtar 
+sözcük 4, Anahtar sözcük 5. 
+6.5. Abstract 
+ 
+Abstract örneği; 
+ 
+ABSTRACT 
+NAME OF THESIS 
+ 
+ 
+ 
+Name and SURNAME of student 
+Department of Industrial Engineering 
+Eskisehir Technical University, Engineering Faculty, Month, Year 
+Supervisor: Title, Name and SURNAME 
+(Co-Supervisor: Title, Name and SURNAME) 
+ 
+................................................................................................................................. 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+.......................................................................................................................................... 
+ 
+Keywords: First keyword, Second keyword, Third keyword, Fourth keyword, Fifth Keyword. 
+ 
+ 
+  
+ 
+6.6. Etik İlke ve Kurallara Uygunluk Beyannamesi 
+ 
+..../..../20.... 
+ 
+ 
+ETİK İLKE VE KURALLARA UYGUNLUK BEYANNAMESİ 
+ 
+ 
+Bu lisans tezinin  hazırlık, veri toplama, analiz ve bilgilerin sunumu olmak üzere tüm 
+aşamalarında bilimsel etik ilke ve kurallara uygun davrandığımı; bu çalışma kapsamında elde 
+edilen tüm veri ve bilgiler için kaynak gösterdiğimi ve bu kaynaklara kaynakçada yer verdiğimi 
+beyan ederim.  
+Herhangi bir zamanda, çalışmamla ilgili yaptığım bu beyana aykırı bir durumun saptanması 
+durumunda, ortaya çıkacak tüm ahlaki ve hukuki sonuçları kabul ettiğimi bildiririm. 
+ 
+Öğrenci Adı Soyadı İmza 
+ 
+………………. 
+ 
+……… 
+ 
+………………. 
+ 
+……… 
+ 
+………………. 
+ 
+……… 
+ 
+ 
+  
+6.7. Üretken Yapay Zekâ Kullanım Beyanı 
+ 
+ 
+..../..../20.... 
+ 
+ 
+ÜRETKEN YAPAY ZEKÂ KULLANIM BEYANI 
+ 
+ 
+Bu lisans tezini hazırlarken ……………………… (ChatGPT, Gemini, DALL -E vb.) 
+üretken yapay zekâ programlarından destek aldığımı/almadığımı beyan ederim. Lisans tezinin 
+hazırlığı aşamasında üretken yapay zeka programlarından ………………… (örn: dil çevirisi, 
+bilimsel makaleye erişim vb.) desteği adım. Üretken yapay zekâ programlarından aldığım 
+bilgilerin doğruluğunu kontrol ettiğimi bildiririm.  
+Herhangi bir zamanda, çalışmamla ilgili yaptığım bu beyana aykırı bir durumun saptanması 
+durumunda, ortaya çıkacak tüm ahlaki ve hukuki sonuçları kabul ettiğimi bildiririm.  
+ 
+Öğrenci Adı Soyadı İmza 
+ 
+………………. 
+ 
+……… 
+ 
+………………. 
+ 
+……… 
+ 
+………………. 
+ 
+……… 
+ 
+  
+7. TEZ ANA BÖLÜMÜ 
+ 
+Tezin ana bölümü için önerilen başlıklar ve içerikleri ; 
+ 
+ 
+1. GİRİŞ 
+Problemin ortaya çıkışı, problemi çözmenin faydaları, katkıları, problemin ortaya konması 
+anlatılmalı. 
+1.1. Literatür Taraması 
+Ele alınan probleme yönelik literatürde yer alan makaleler problem tarifi, problemi çözmek 
+için geliştirilen model ve yöntemler vb. gibi konuları içerecek şekilde özetlenmelidir. 
+İncelenen makale sayısı kişi aşına en az 5 adet olmalıdır. Ele alınan problemin literatürde 
+yer alan çalışmalardan farklılıklarından ve/veya benzerliklerinden bahsedilmelidir. 
+ 
+1.2. Problemin Kısaca Tarifi 
+ 
+Projede ele alınan problem için literatürden seçilen uygun yöntemler/modeller 
+değerlendirilmeli, yöntemlerden/modellerden problemin çözümü için seçilen  yöntem/model 
+seçilmelidir. 
+ 
+2. … YÖNTEMİ 
+Yöntemin probleme uygunluğun tartışılması, seçilme nedenleri, ilk kim tarafından ortaya 
+atıldığı, kimlerin geliştirdiği, yöntemin faydaları, yöntemin adımları, varsa geliştirme 
+safhaları, açıkça tarifi. 
+3. … UYGULANMASI 
+Problemin işletme için tarifi 
+ 
+3.1. İşletme ve Problem Hakkında Genel Bilgiler 
+ 
+İşletmenin kısaca tarihçesi ve çalışma alanı anlatılmalı ve işletmede ele alınan sistem hakkında 
+bilgi verilmelidir. Ele alınan sistemdeki problem tarif edilmeli, problem ile ilgili elde edilen 
+verilerden bahsedilmelidir. Verilerin analizi yapılmalıdır. 
+3.2. ..Yönteminin .. Uygulanması 
+ 
+Problem için seçilen yöntemin/modelin nasıl uygulandığı açıklanmalı ve çözümler verilmelidir. 
+Sayısal sonuçlara yer verilmeli, sonuçlar karşılaştırılmalı 
+ 
+4. SONUÇ VE ÖNERİLER 
+Elde edilen sonuçlar yorumlanmalı ve bu sonuçlara bağlı olarak iyileştirme önerilerinden 
+bahsedilmelidir. 
+Projenin girişimcilik, yenilikçilik ve sürdürülebilir kalkınma açısından katkısı ve projenin 
+evrensel ve toplumsal boyutlarda sağlık, çevre ve güvenlik üzerindeki etkileri tartışılmalıdır. 
+8. TEZ ARKA BÖLÜMÜ 
+ 
+8.1. Kaynakça 
+ 
+• Kaynakça, tezin sonunda sayfa ortasına büyük harflerle ve kalın olarak yazılmış 
+“KAYNAKÇA” başlığı ile başlar. 
+• Kaynakçaya bölüm numarası verilmez. 
+• Yararlanılan kaynaklar soyada göre alfabetik sırayla ya da tezin içinde yer aldığı 
+sıraya göre rakamla numaralandırılarak “Kaynakça”da yer alır. 
+• Numara ile atıf vermede, metin içinde [ ] köşeli parantez içinde numaralandırma 
+yapılır. 
+• Tezde ilk verilen kaynak [1] numara ile başlar ve veriliş sırasına göre numaralandırılır. 
+Kaynaklara metin içinde çeşitli durumlara göre aşağıdaki gibi atıf yapılır: 
+ 
+1 no.lu kaynak ise: [1] 
+1 ve 3 arası (1, 2 ve 3 no.lu) kaynaklar ise: [1-3] 
+1 ve 3 no.lu kaynaklar ise: [1, 3] 
+1, 3 ve 8 no.lu kaynaklar ise: [1, 3, 8] 
+1 ve 3 ile 8 no.lu kaynaklar arasındaki 
+kaynaklar ise : 
+[1, 3-8] 
+ 
+8.2. Ekler 
+ 
+• Dipnot olarak verilmesi uygun olmayan uzunluktaki açıklamalar, çizim, plan, resim, 
+anket formu, veri, tablo, şekil, arşiv metni, yasa metni, etik kurul izni, teze ait basılmış 
+makale gibi bilgi ve belgeler eklerde sunulur. 
+• Burada yer alacak her bir öğe için uygun bir başlık seçilir ve bunlar sunuş sırasına 
+göre “EK-1, EK-2, ...” biçiminde ve her biri ayrı bir sayfadan başlayarak sunulur. 
+        
+ 

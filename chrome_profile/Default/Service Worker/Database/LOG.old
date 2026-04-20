@@ -1,0 +1,39 @@
+2026/04/09-23:51:31.979 1f8a45b Reusing MANIFEST /Users/oguzhandikmen/Downloads/tezproje/chrome_profile/Default/Service Worker/Database/MANIFEST-000001
+2026/04/09-23:51:32.007 1f8a45b Recovering log #27
+2026/04/09-23:51:32.009 1f8a45b Reusing old log /Users/oguzhandikmen/Downloads/tezproje/chrome_profile/Default/Service Worker/Database/000027.log 
+2026/04/10-00:11:57.359 1f8a445 Level-0 table #32: started
+2026/04/10-00:11:57.365 1f8a445 Level-0 table #32: 57865 bytes OK
+2026/04/10-00:11:57.375 1f8a445 Delete type=0 #27
+2026/04/10-00:31:59.351 1f8a445 Compacting 1@1 + 1@2 files
+2026/04/10-00:31:59.359 1f8a445 Generated table #33@1: 16 keys, 1439 bytes
+2026/04/10-00:31:59.359 1f8a445 Compacted 1@1 + 1@2 files => 1439 bytes
+2026/04/10-00:31:59.364 1f8a445 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-00:31:59.364 1f8a445 Delete type=2 #29
+2026/04/10-00:31:59.364 1f8a445 Delete type=2 #32
+2026/04/10-02:23:03.816 1f8a445 Level-0 table #35: started
+2026/04/10-02:23:03.819 1f8a445 Level-0 table #35: 57898 bytes OK
+2026/04/10-02:23:03.828 1f8a445 Delete type=0 #31
+2026/04/10-02:41:19.088 1f8a45d Compacting 1@1 + 1@2 files
+2026/04/10-02:41:19.093 1f8a45d Generated table #36@1: 16 keys, 1439 bytes
+2026/04/10-02:41:19.093 1f8a45d Compacted 1@1 + 1@2 files => 1439 bytes
+2026/04/10-02:41:19.095 1f8a45d compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-02:41:19.095 1f8a45d Delete type=2 #35
+2026/04/10-02:41:19.095 1f8a45d Delete type=2 #33
+2026/04/10-04:28:10.061 1f8a445 Level-0 table #38: started
+2026/04/10-04:28:10.066 1f8a445 Level-0 table #38: 57886 bytes OK
+2026/04/10-04:28:10.069 1f8a445 Delete type=0 #34
+2026/04/10-04:48:21.422 1f8a443 Compacting 1@1 + 1@2 files
+2026/04/10-04:48:21.425 1f8a443 Generated table #39@1: 16 keys, 1439 bytes
+2026/04/10-04:48:21.425 1f8a443 Compacted 1@1 + 1@2 files => 1439 bytes
+2026/04/10-04:48:21.427 1f8a443 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-04:48:21.427 1f8a443 Delete type=2 #38
+2026/04/10-04:48:21.427 1f8a443 Delete type=2 #36
+2026/04/10-06:34:01.148 1f8a445 Level-0 table #41: started
+2026/04/10-06:34:01.152 1f8a445 Level-0 table #41: 57910 bytes OK
+2026/04/10-06:34:01.159 1f8a445 Delete type=0 #37
+2026/04/10-06:58:21.525 1f8a445 Compacting 1@1 + 1@2 files
+2026/04/10-06:58:21.534 1f8a445 Generated table #42@1: 16 keys, 1439 bytes
+2026/04/10-06:58:21.535 1f8a445 Compacted 1@1 + 1@2 files => 1439 bytes
+2026/04/10-06:58:21.538 1f8a445 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/04/10-06:58:21.539 1f8a445 Delete type=2 #39
+2026/04/10-06:58:21.539 1f8a445 Delete type=2 #41

@@ -1,0 +1,189 @@
+# TİKTOK'TA ETKİLİ MARKA İŞ BİRLİĞİ İÇİN İÇERİK ÜRETİCİSİ SEÇİMİNİN OPTİMİZASYONU
+
+**Lisans Tezi**
+
+**Esra ZEYREK  
+Abdullah Raif YILDIRIM  
+Oğuzhan DİKMEN**
+
+**Eskişehir, 2025**
+
+---
+
+**Danışman: Asst. Prof. Dr. Zeliha ERGÜL AYDIN**
+
+Eskişehir Teknik Üniversitesi Mühendislik Fakültesi  
+Endüstri Mühendisliği Bölümü  
+**Kasım, 2025**
+
+---
+
+## ÖZET
+
+**TİKTOK'TA ETKİLİ MARKA İŞ BİRLİĞİ İÇİN İÇERİK ÜRETİCİSİ SEÇİMİNİN OPTİMİZASYONU**
+
+**Esra ZEYREK | Abdullah Raif YILDIRIM | Oğuzhan DİKMEN**
+
+Endüstri Mühendisliği  
+Eskişehir Teknik Üniversitesi, Mühendislik Fakültesi, Kasım, 2025  
+Danışman: Asst. Prof. Dr. Zeliha ERGÜL AYDIN
+
+Dijital pazarlama ekosisteminde kısa video temelli içeriklerin önem kazanması, özellikle TikTok gibi hızlı tüketilen ve yüksek etkileşim potansiyeli sunan platformları marka iletişim stratejilerinin merkezine taşımıştır. Influencerlar bu ortamda markaların görünürlüğünü artıran ve tüketici davranışlarını etkileyen temel aktörler hâline gelmiştir. Ancak influencer seçiminin çoğu zaman takipçi sayısı ya da ortalama etkileşim gibi sınırlı göstergelere dayanması, marka–hedef kitle uyumunun göz ardı edilmesine ve bütçenin etkin kullanılmamasına neden olmaktadır.
+
+Bu çalışma, markaların TikTok üzerinde gerçekleştirdikleri reklam kampanyalarında doğru içerik üreticilerinin belirlenmesini veri temelli ve matematiksel bir çerçeveye oturtmayı amaçlamaktadır. Bu doğrultuda TikTok kullanıcılarına ait istatistiksel ve içerik odaklı metaveriler web kazıma yöntemleriyle elde edilmekte; ardından bu veriler bir dizi ön işleme ve içerik çözümleme sürecinden geçirilerek sayısal değişkenlere dönüştürülmektedir. Elde edilen göstergeler, markanın bütçe ve stratejik öncelikleriyle birlikte karma tamsayılı doğrusal programlama (MILP) modeli içerisinde değerlendirilerek en yüksek reklam etkisini sağlayabilecek influencer kombinasyonu hesaplanmaktadır.
+
+Çalışma, hem akademide hem uygulamada TikTok verisini optimizasyon temelli bir karar modeline dönüştüren nadir yaklaşımlardan biri olması nedeniyle özgün bir değer taşımaktadır. Elde edilecek sonuçların, farklı bütçe seviyeleri ve hedef kitle yapılarına sahip markalar için uyarlanabilir bir karar destek mekanizması sunması beklenmektedir.
+
+**Anahtar Sözcükler:** TikTok, İnfluencer Seçimi, Dijital Pazarlama, İçerik Üreticisi Analizi, Etkileşim Metrikleri, Optimizasyon Modeli, Doğrusal Programlama, Web Kazıma, Marka İş Birliği, Veri Temelli Karar Verme
+
+---
+
+## ABSTRACT
+
+**A MULTI-CRITERIA DECISION-MAKING FRAMEWORK FOR SELECTING GENERATIVE ARTIFICIAL INTELLIGENCE APPLICATIONS BASED ON ASPECT-BASED SENTIMENT ANALYSIS**
+
+**Esra ZEYREK | Abdullah Raif YILDIRIM | Oğuzhan DİKMEN**
+
+Department of Industrial Engineering  
+Eskisehir Technical University, Engineering Faculty, November, 2025  
+Supervisor: Asst. Prof. Dr. Zeliha ERGÜL AYDIN
+
+The growing influence of short-form video platforms has reshaped contemporary digital marketing practices, positioning TikTok as a strategic medium for brands seeking high user engagement and rapid content circulation. Within this environment, influencers have assumed a pivotal role by shaping audience perceptions and facilitating authentic brand communication. Nonetheless, the selection of influencers often relies on oversimplified indicators—such as follower count or average engagement—which overlook brand–audience alignment and lead to suboptimal campaign outcomes.
+
+This study aims to transform the influencer selection process on TikTok into a data-driven, systematic, and optimization-oriented framework. To achieve this, metadata related to TikTok content creators—ranging from engagement statistics to content characteristics—are collected through web-scraping techniques and processed into quantifiable variables. These variables are integrated into a Mixed-Integer Linear Programming (MILP) model designed to identify the combination of influencers that maximizes expected promotional impact under predefined budgetary and strategic constraints.
+
+By incorporating both quantitative performance indicators and qualitative content features, the proposed approach offers a comprehensive decision-support mechanism for brands. The study provides an analytically robust perspective on influencer selection and contributes a novel optimization framework that is adaptable to various marketing objectives and operational limitations.
+
+**Keywords:** TikTok, Influencer Selection, Digital Marketing, Content Creator Analysis, Engagement Metrics, Optimization Model, Mixed-Integer Linear Programming, Web Scraping, Brand Collaboration, Data-Driven Decision Making
+
+---
+
+## İÇİNDEKİLER
+
+1. [GİRİŞ](#1-giriş)
+2. [LİTERATÜR TARAMASI](#2-literatür-taraması)
+3. [ÖZGÜN DEĞER](#3-özgün-değer)
+4. [ÇALIŞMADA KULLANILAN TEMEL KAVRAMLAR VE YÖNTEMLER](#4-çalışmada-kullanılan-temel-kavramlar-ve-yöntemler)
+   - 4.1. TikTok Verisinin Yapısı ve Elde Edilmesi
+   - 4.1.1. Web Kazıma Yöntemi
+   - 4.1.2. İçerik Analizi Yaklaşımı
+   - 4.2. Etki Değeri ve Performansın Modellenmesi
+   - 4.2.1. MILP (Karma Tamsayılı Doğrusal Programlama) Yaklaşımı
+   - 4.2.2. Modelin Kısıtları ve Çözüm Süreci
+5. [YAYGIN ETKİ](#5-yaygın-etki)
+6. [GİRİŞİMCİLİK VE YENİLİKÇİLİK](#6-girişimcilik-ve-yenilikçilik)
+7. [SÜRDÜRÜLEBİLİRLİK VE ÇEVRE](#7-sürdürülebilirlik-ve-çevre)
+   - 7.1. Birleşmiş Milletler Sürdürülebilir Kalkınma Amaçları (SKA)
+- [KAYNAKÇA](#kaynakça)
+
+---
+
+## 1. GİRİŞ
+
+Dijitalleşme süreci, bilgiye erişim hızını ve etkileşim biçimlerini kökten değiştirmiştir. Bu dönüşümle birlikte, pazarlama faaliyetleri de geleneksel mecralardan dijital platformlara kaymış; tüketicilerin karar süreçleri giderek daha fazla sosyal medya etkileşimlerinden etkilenir hâle gelmiştir. Özellikle TikTok gibi kısa video tabanlı platformlar, yüksek kullanıcı katılımı, algoritmik keşif dinamikleri ve özgün içerik üretim biçimleriyle markalar açısından yeni fırsatlar yaratmaktadır. Bu platformlarda içerik üreticileri yalnızca reklam yüzü olmaktan çıkarak, marka kimliğini ve tüketici algısını doğrudan şekillendiren stratejik ortaklara dönüşmüştür.
+
+Influencer pazarlaması, günümüzde dijital reklamcılığın en etkili alanlarından biri olarak kabul edilmektedir. Küresel ölçekte influencer pazarlaması hacmi 2023 yılı itibarıyla 21 milyar doları aşmış olup, markaların dijital pazarlama bütçelerinde önemli bir paya sahiptir. Bununla birlikte, markaların doğru içerik üreticisini seçme süreci hâlâ önemli bir problem olarak varlığını sürdürmektedir. Çoğu kampanya, yalnızca takipçi sayısı veya ortalama beğeni oranı gibi tek boyutlu metriklere dayanmakta; içerik dili, hedef kitle özellikleri, marka değerleri ve bütçe sınırlamaları gibi daha karmaşık faktörler göz ardı edilmektedir.
+
+Bu durum, markaların hedef kitlelerine ulaşma etkinliğini azaltmakta ve reklam yatırımlarının geri dönüş oranını düşürmektedir. Özellikle sınırlı bütçeyle çalışan küçük ve orta ölçekli işletmeler için, yanlış influencer seçimi hem kaynak kaybına hem de olumsuz marka algısına neden olabilmektedir. Dolayısıyla influencer seçimi, yalnızca iletişim stratejisi değil, aynı zamanda çok kriterli bir optimizasyon problemi olarak ele alınmalıdır.
+
+Bu bağlamda gerçekleştirilen çalışma, markaların stratejik hedefleri, bütçe kısıtları ve tercihleri doğrultusunda en uygun içerik üreticisi kombinasyonunu belirleyebilen veri tabanlı bir karar modeli geliştirmeyi amaçlamaktadır. Çalışma kapsamında geliştirilen karma tamsayılı doğrusal programlama (MILP) modeli, bütçe ve etki kısıtları altında reklam performansını maksimize edecek şekilde tasarlanmıştır. Model, farklı markaların ihtiyaçlarına göre özelleştirilebilen bir yapıya sahip olup, örneğin bir oyun markası için mizahi içerikler pozitif bir kriterken, bir finans markası için bu özellik negatif bir katsayı olarak tanımlanabilmektedir.
+
+Projede kullanılacak veriler TikTok platformundan elde edilecektir. Türkiye'de API erişiminin sınırlı olması nedeniyle veri toplama süreci web kazıma (web scraping) yöntemiyle yürütülecek, BeautifulSoup, Selenium ve Pandas gibi Python kütüphaneleri kullanılacaktır. Elde edilen veriler, doğal dil işleme (NLP) teknikleriyle analiz edilerek içerik kategorilerine (örneğin moda, teknoloji, mizah, spor) ayrılacaktır. Her içerik üreticisi, bu analizler sonucu elde edilen etki puanı (Eᵢ) ile temsil edilecek ve model, tanımlanan bütçe altında maksimum toplam etki değerini sağlayan kombinasyonu seçecektir.
+
+Bu proje, Türkiye'de TikTok verisine dayalı geliştirilecek ilk influencer optimizasyon modeli olma özelliğini taşımaktadır. Modelin özgünlüğü, yalnızca belirli parametrelerle sınırlı kalmaması; markaların kendi dinamiklerine göre tanımlanabilen esnek kriterleri içermesinden kaynaklanmaktadır. Çalışmanın sonucunda geliştirilecek model, dijital pazarlama alanında veriye dayalı karar verme kültürünü güçlendirecek, reklam bütçelerinin daha verimli kullanılmasına olanak tanıyacak ve özellikle küçük ölçekli markalar için rekabet avantajı yaratacaktır.
+
+---
+
+## 2. LİTERATÜR TARAMASI
+
+Dijitalleşmenin durdurulamaz ilerleyişi, markaların hedef kitlelerine ulaşma biçimlerini kökten değiştirdi; bildiğimiz geleneksel reklam mecraları, yerini anlık etkileşime dayalı sosyal medya platformlarına bıraktı. Bu dönüşümün en çarpıcı sonucu, özellikle kısa video formatının baskın olduğu TikTok gibi mecraların, influencer pazarlamasını çağın en baskın tanıtım aracı haline getirmesidir. Influencerlar, artık pasif birer ürün tanıtıcısı olmaktan çok öte, marka algısını şekillendiren ve hedef kitlenin satın alma kararlarını doğrudan etkileme gücüne sahip dijital kanaat önderleri olarak kabul ediliyorlar (Johnson & Alvarez, 2021; Kumar & Lee, 2020). Sektörün küresel hacmi 2023 itibarıyla 21 milyar doları aşmış olsa da (Zhang & Han, 2023), influencer seçim süreçleri akademik çalışmalarda ne yazık ki hâlâ takipçi sayısı veya ortalama etkileşim oranı gibi yüzeysel, tek boyutlu göstergelerle sınırlandırılıyor (Andersson & Bergström, 2020; Li & Wang, 2022; Araujo vd., 2019). Bu durum, farklı hedef kitlelere sahip markalar için kampanya başarısını sekteye uğratmakta ve yatırılan bütçenin verimliliğini ciddi ölçüde düşürmektedir.
+
+Literatürdeki influencer seçim araştırmalarının büyük bir kısmı enerjisini Instagram, YouTube veya Twitter gibi platformlara odaklamış durumda (Saito & Kobayashi, 2019; Tiukhova vd., 2022). Bu çalışmaların çoğu, influencerları yalnızca popülerlik ekseninde sınıflandırıyor; ancak marka kimliği, hedeflenen kitle profili ve kurumsal reklam stratejileri gibi hayati unsurları yeterince hesaba katmıyor. Dahası, mevcut yöntemlerin çoğunun reklam bütçesi ve stratejik kısıtlar altında herhangi bir optimizasyon yapmaması, markaların yatırım getirisi maksimizasyonuna doğrudan katkı sunmasını engellemektedir.
+
+Bütçe kısıtlı optimizasyon yaklaşımları elbette literatürde mevcuttur; *Optimal Influencer Marketing Campaign under Budget Constraints* (Kim & Cho, 2023) ve *Budgeted Portfolio Optimization Model for Social Media Influencer Selection* (López-Dawn & Giovanidis, 2021) gibi değerli çalışmalar bu alana katkı sağlamıştır. Fakat bu modeller, çoğunlukla genel etkiyi maksimize etmeye odaklandığından, markaya özgü, ince detaylara inen hedef kitle uyumunu ve spesifik kısıtları entegre etme noktasında sınırlılıklar yaşamaktadır.
+
+İşte tam da bu noktada, projemiz literatürdeki kritik bir boşluğu doldurmayı amaçlıyor. Biz, belirlenen bütçe ve özel kısıtlar altında maksimum reklam etkisini sağlayacak Karma Tamsayılı Doğrusal Programlama (MILP) modelini geliştirmeyi hedefliyoruz. Bu projenin en önemli ayırt edici özelliği, Türkiye'de TikTok verisine dayalı olarak geliştirilecek ilk influencer optimizasyon modeli olma iddiasını taşımasıdır. Geliştireceğimiz model, her kurumun veya bireysel markanın kendi tercihlerini ve kısıtlarını tanımlayabileceği esnek ve uyarlanabilir bir yapıya sahip olacak. Böylelikle reklam verenler, iletişim dillerini, hedef kitlelerinin ince özelliklerini ve marka imajlarını dikkate alarak en uygun influencer kombinasyonunu bilimsel bir zeminde belirleyebilecektir.
+
+---
+
+## 3. ÖZGÜN DEĞER
+
+Öncelikle, literatürdeki optimizasyon çalışmaları genellikle Instagram veya YouTube gibi platformlara odaklanmışken, projemiz bu alandaki kritik bir boşluğu dolduruyor. Yüksek etkileşim potansiyeli ve keşif algoritmasıyla öne çıkan TikTok'a odaklanarak, Türkiye'de TikTok verisi kullanılarak geliştirilecek ilk influencer optimizasyon modeli olma özelliğini taşıyoruz. Bu yerel ve platforma özgü yaklaşım, küresel modellerin gözden kaçırdığı yerel dinamikleri yakalayarak somut bir fark yaratacaktır.
+
+İkinci olarak, metodolojimiz oldukça farklı. Mevcut yaklaşımlar popülarite gibi tek boyutlu göstergelere takılı kalırken, *Optimal Influencer Campaign* gibi modeller dahi markaya özgü kısıtları entegre etmekte yetersiz kalıyor. Biz, bu eksikliği gidermek için Karma Tamsayılı Doğrusal Programlama (MILP) modelini kullanacağız. Bu model, yalnızca bütçe ve maliyeti değil, aynı zamanda kurumun özel tercihlerini, içerik tonunu ve hedef kitle uyumunu dikkate alarak toplam reklam etkisini maksimize edecek esnek bir karar mekanizması sunuyor. Bu sayede, her marka kendi stratejisine uygun, kişiselleştirilmiş bir çözüm bulabilecek.
+
+Son olarak, projemizin pratik değeri çok yüksek. Veri toplama sürecinde web kazıma ve içerik analizinde Doğal Dil İşleme (NLP) yöntemlerini kullanarak elde ettiğimiz verilerle geliştireceğimiz bu yerli model, Türkiye'deki reklam verenlerin bütçelerini çok daha verimli kullanmalarına ve doğru influencer'ı seçmelerine olanak tanıyacak. Bu yönüyle çalışmamız, akademik literatüre katkı sağlamanın yanı sıra, ulusal düzeyde Veri Odaklı Ekonomi hedeflerine de güçlü bir destek sağlamaktadır.
+
+---
+
+## 4. ÇALIŞMADA KULLANILAN TEMEL KAVRAMLAR VE YÖNTEMLER
+
+Bu araştırmada TikTok üzerinde içerik üreten hesapların marka iş birlikleri açısından değerlendirilmesi amaçlandığından hem veri toplama hem de karar modelleme süreçlerini kapsayan çeşitli yöntemlerin kullanılması planlanmaktadır. Çalışmada yararlanılacak kavramlar, verinin elde edilmesiyle başlayan ve matematiksel bir karar yapısına dönüştürülmesine kadar devam eden çok aşamalı bir yaklaşımı içermektedir.
+
+### 4.1. TikTok Verisinin Yapısı ve Elde Edilmesi
+
+TikTok platformu kısa video temelli bir yapıya sahip olduğu için içeriklerin yayılımı, kullanıcı davranışı ve etkileşim biçimi diğer sosyal ağlardan farklı bir dinamiğe sahiptir. Bu nedenle çalışma kapsamında toplanacak verilerin yalnızca takipçi sayısı veya beğeni ortalamaları gibi klasik göstergelerle sınırlı olmaması, içeriklerin yapısal özelliklerini de içermesi gerekecektir. Verilerin elde edilmesi sürecinin web kazıma yöntemiyle yürütülmesi planlanmakta; bu süreçte içerik üreticilerinin profil istatistikleri, paylaşım ritimleri, gönderi açıklamaları ve hashtag kullanımları gibi çeşitli metaverilere ulaşılacaktır.
+
+#### 4.1.1. Web Kazıma Yöntemi
+
+Web kazıma, doğrudan erişim sağlanamayan veri kaynaklarından otomatik araçlarla bilgi çekilmesini sağlayan bir tekniktir. TikTok API'sinin Türkiye'de sınırlı kullanıma sahip olması sebebiyle çalışmanın veri tabanı bu yöntemle oluşturulacaktır. Bu süreçte sayfa kaynaklarının incelenmesi, HTML etiketlerinin çözümlenmesi ve ilgili verilerin sistematik biçimde kaydedilmesi hedeflenmektedir. Web kazıma yöntemi sayesinde platformdaki içerik üreticilerine ait sayısal bilgiler ve metinsel açıklamalar düzenli bir şekilde toplanacak ve analiz için bütünleştirilmiş bir veri seti oluşturulacaktır.
+
+#### 4.1.2. İçerik Analizi Yaklaşımı
+
+TikTok içerikleri yalnızca sayısal göstergeler üzerinden değerlendirilemeyeceği için gönderilerin açıklama metinlerinin ve hashtag yapıların incelenmesi gerekmektedir. Bu kapsamda içeriklerin hangi kategorilere ait olduğu, üreticinin nasıl bir iletişim dili kullandığı, paylaşımların konu bütünlüğü ve kullanıcı tepkilerinin hangi tarz içeriklere yöneldiği araştırılacaktır. İçerik analizi sürecinin, daha sonra optimizasyon modeline aktarılacak etki skorlarının oluşturulmasında belirleyici bir rol oynaması beklenmektedir.
+
+### 4.2. Etki Değeri ve Performansın Modellenmesi
+
+Çalışma kapsamında her bir içerik üreticisinin marka için sağlayabileceği olası katkıyı nesnel biçimde ifade eden bir etki değerinin oluşturulması planlanmaktadır. Etki değeri, hem etkileşim göstergelerinden hem de içerik yapısından elde edilen bilgilerden yararlanılarak hesaplanacaktır.
+
+#### 4.2.1. MILP (Karma Tamsayılı Doğrusal Programlama) Yaklaşımı
+
+MILP, karar değişkenlerinin bir kısmının tamsayı veya ikili (0–1) değerlerden oluştuğu doğrusal programlama problem türlerini ifade etmektedir. Bu çalışmada içerik üreticilerinin seçilip seçilmeyeceği ikili karar yapısına sahip olduğu için MILP modelinin uygun bir yöntem olacağı öngörülmektedir. Modelde amaç fonksiyonu, belirlenen bütçe sınırları altında toplam etki değerinin en yüksek olduğu içerik üreticisi kombinasyonunu belirlemek üzerine kurulacaktır.
+
+#### 4.2.2. Modelin Kısıtları ve Çözüm Süreci
+
+MILP modelinin çözülme sürecinde kullanıcının belirlediği bütçe sınırı, içerik uyumu gibi özellikler ve belirli kategorilerde temsil zorunluluğu gibi kriterler kısıt olarak tanımlanacaktır. Karar değişkenleri her içerik üreticisi için seçme veya seçmeme durumunu temsil edecektir. Modelin farklı senaryolarla test edilmesi planlanmakta; bütçe miktarının değiştirilmesi, belirli kategorilerin öne çıkarılması ya da içerik üreticilerinin farklı ağırlıklarda değerlendirilmesi gibi seçeneklerle çözüm uzayı incelenecektir.
+
+---
+
+## 5. YAYGIN ETKİ
+
+Bu çalışmanın tamamlanmasıyla birlikte ortaya çıkacak modelin yalnızca akademik alanda değil, dijital pazarlama sektöründe de çeşitli açılardan karşılık bulması beklenmektedir. TikTok üzerinde içerik üreticisi seçiminin bugün çoğunlukla sezgisel yöntemlerle yürütülmesi, özellikle sınırlı bütçeyle çalışan markalar açısından risk oluşturmaktadır. Bu proje kapsamında geliştirilecek optimizasyon yaklaşımının, marka yöneticilerinin karar süreçlerini daha sistemli bir yapıya kavuşturması, reklam kaynaklarının gereksiz kullanımı yerine hedef odaklı bir planlamaya yönlendirmesi öngörülmektedir.
+
+Modelin Türkiye koşullarında geliştirilecek oluşu ayrıca yerli dijital ekosistem için önemli bir katkı sağlayacaktır. Sosyal medya veri analitiği ve optimizasyon alanlarında dış kaynaklı araçlara duyulan ihtiyacın azaltılması, üniversite–sektör iş birliklerinin de güçlenmesine imkân verecektir. Çalışmanın ilerleyen dönemlerde farklı platformlarda uygulanabilir hâle getirilmesi ve yeni araştırmalara temel oluşturması beklenmektedir.
+
+---
+
+## 6. GİRİŞİMCİLİK VE YENİLİKÇİLİK
+
+Bu araştırma, salt bir akademik çalışmanın sınırlarını aşarak, dijital pazarlama sektörünün önemli bir ihtiyacına doğrudan cevap veren, yüksek bir girişimcilik potansiyeli taşıyan yenilikçi bir çözüm sunmaktadır. Proje çıktısı, yalnızca büyük kurumsal firmalar için değil, aynı zamanda sınırlı bütçeyle hareket eden KOBİ'ler ve bireysel girişimciler için de kolaylıkla uygulanabilir, yerli bir influencer optimizasyon modeli oluşturacaktır. Geliştirilecek Python tabanlı bu model, ileride SaaS (Hizmet Olarak Yazılım) modeliyle pazara sunulabilecek bir dijital araç için güçlü bir prototip niteliği taşımaktadır.
+
+Projenin yenilikçilik düzeyi oldukça yüksektir. Metodolojik açıdan, çalışmaların odağı çoğunlukla Instagram ve YouTube gibi platformlarda yoğunlaşırken, bu proje doğrudan TikTok platformunun dinamiklerini ve kısa video içeriği etkileşimini merkeze almaktadır. Ayrıca geliştirilecek Karma Tamsayılı Doğrusal Programlama (MILP) modeli, mevcut yaklaşımların aksine, markanın özel stratejik kısıtlarını (marka kimliği, içerik tonu gibi) ve bütçeyi aynı anda optimize eden çok boyutlu bir karar mekanizması sunar.
+
+Son olarak, proje Web Kazıma ve Doğal Dil İşleme (NLP) algoritmalarını MILP ile başarıyla bütünleştirerek disiplinler arası ve teknoloji yoğun bir yenilik sunmaktadır. Bu entegrasyon, çözümün bilimsel derinliğini artırırken, sektörün ihtiyacı olan pratik ve ölçeklenebilir bir aracın temelini atmaktadır.
+
+---
+
+## 7. SÜRDÜRÜLEBİLİRLİK VE ÇEVRE
+
+Bu çalışmada ele alınan optimizasyon yaklaşımının sürdürülebilirlik açısından dolaylı fakat önemli etkileri bulunmaktadır. Sosyal medya üzerinde yürütülen reklam kampanyalarının planlanmasında bütçelerin verimli kullanılması, kaynak israfını azaltacak ve özellikle küçük ölçekli markaların dijital pazarlama süreçlerinde daha bilinçli stratejiler geliştirmesine katkı sağlayacaktır. TikTok gibi hızlı tüketilen bir içerik ortamında rastgele veya deneme-yanılma yöntemiyle influencer seçilmesi, hem reklam kaynağının hem de dijital enerji tüketiminin gereksiz artmasına neden olabilmektedir. Bu proje kapsamında geliştirilecek model, kampanya seçimlerinin veri temelli bir temele dayandırılmasına yardımcı olarak daha az sayıda başarısız kampanya yürütülmesini sağlayacak; böylece dijital içerik üretiminde ortaya çıkan karbon ayak izinin dolaylı olarak azalmasına katkıda bulunacaktır.
+
+### 7.1. Birleşmiş Milletler Sürdürülebilir Kalkınma Amaçları (SKA)
+
+Bu proje, içeriği itibarıyla Birleşmiş Milletler'in belirlediği sürdürülebilir kalkınma hedeflerinden özellikle **SKA 12: Sorumlu Üretim ve Tüketim** ile doğrudan ilişkilidir. TikTok üzerinde gerçekleştirilecek kampanya planlamalarında gereksiz harcama yapılmasının engellenmesi, dijital reklam kaynaklarının daha dikkatli kullanılması ve veri temelli karar mekanizmalarının benimsenmesi, SKA 12'nin öngördüğü bilinçli tüketim yaklaşımına uyum göstermektedir. Ayrıca modelin, markaların dijital içerik stratejilerini daha verimli hâle getirmesi, uzun vadede hem ekonomik hem de çevresel açıdan sürdürülebilir bir iletişim yapısının oluşmasına katkı sağlayacaktır.
+
+---
+
+## KAYNAKÇA
+
+1. Johnson, M., & Alvarez, L. (2021). The Rise of Digital Influencers: Shaping the Future of Marketing. *Journal of Digital Communication*, 14(3), 210–225.
+2. Kumar, R., & Lee, D. (2020). Influencer Marketing with Social Platforms. *Social Media Research Journal*, 8(4), 112–130.
+3. Zhang, P., & Han, Y. (2023). Social Media Influencer Marketing: Foundations, Trends and Research Directions. *International Journal of Marketing Science*, 19(1), 55–74.
+4. Andersson, S., & Bergström, E. (2020). Instagram and Influencer Marketing: An Empirical Study of the Parameters Behind Success. *Procedia Economics and Business*, 7(2), 89–101.
+5. Li, C., & Wang, H. (2022). Computational Studies in Influencer Marketing. *Expert Systems with Applications*, 193(4), 116–127.
+6. Araujo, T., Neijens, P., & Vliegenthart, R. (2019). Discovering Effective Influencers. *Computers in Human Behavior*, 98(5), 10–20.
+7. Saito, M., & Kobayashi, K. (2019). A SI Model for Social Media Influencer Maximization. *IEEE Access*, 7, 150876–150889.
+8. Tiukhova, L., Korovin, D., & Melnikov, P. (2022). Influencer Prediction with Dynamic Graph Neural Networks. *Neural Networks*, 154, 145–159.
+9. Influencer Marketing Benchmark Report 2023. (2023). Influencer Marketing Hub Report, Global Industry Review Series.
+10. Kim, S., & Cho, Y. (2023). Optimal Influencer Marketing Campaign under Budget Constraints. *Journal of Business Analytics*, 12(3), 180–195.
+11. López-Dawn, A., & Giovanidis, A. (2021). Budgeted Portfolio Optimization Model for Social Media Influencer Selection. *Journal of Applied Optimization*, 18(4), 300–315.
