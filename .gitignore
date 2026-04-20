@@ -18,6 +18,8 @@ data_tiktok/raw_html/
 data_tiktok/screenshots/full/
 chrome_profile/
 data_tiktok/run_state.json
+data_tiktok/profiles.csv
+data_tiktok/videos.csv
 
 # ── Word geçici dosyalar ──
 ~*.tmp.docx
