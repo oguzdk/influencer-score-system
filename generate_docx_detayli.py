@@ -121,4 +121,5 @@ add_paragraph("Ticari dünyada bilinçsiz harcanan medya reklam bütçeleri, şi
 add_heading("6. Proje Beklentileri ve Takip Eden Süreç (Gelecek Planı)", level=1)
 add_paragraph("Mevcut durumda ana belkemiği ve veri iskeleti kurulan Karar Destek aracı beklentileri aşan bir ilerleme performansı yakalamıştır. Takip eden proje altı haftasında (Hafta 7 - 14): Gurobi ILP senaryolarının kıyaslamalı duyarlılık analizlerinin yapılması, ağırlık faktörlerinin artıp azalması durumuyla ortaya çıkacak sonuç değişikliklerinin rapor edilmesi, arayüz kodlarının stabilitesinin test edilerek nihai tez yazım aşamasına geçilmesi ve tüm çıktının formata göre kitaplaştırılması hedeflenmektedir.")
 
-doc.save('/Users/oguzhandikmen/Downloads/tezproje/ENM458_Ara_Rapor_Detayli.docx')
+doc.save('ENM458_Ara_Rapor_Detayli.docx')
+print("ENM458_Ara_Rapor_Detayli.docx başarıyla oluşturuldu!")

@@ -496,6 +496,6 @@ for r, row in enumerate(risks):
         set_cell_style(t6.rows[r+1].cells[c], val, size=10)
 
 # ─── KAYDET ─────────────────────────────────────────────────────────────────
-output_path = '/Users/oguzhandikmen/Downloads/tezproje/ENM458_Ara_Rapor_Final.docx'
+output_path = 'ENM458_Ara_Rapor_Final.docx'
 doc.save(output_path)
 print(f'✅ Dosya kaydedildi: {output_path}')

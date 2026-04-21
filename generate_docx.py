@@ -106,4 +106,5 @@ p.paragraph_format.first_line_indent = Cm(1)
 p.add_run("SKA 12 (Sorumlu Üretim ve Tüketim): ").bold = True
 p.add_run("Model, dijital pazarlama kaynaklarını hedef odaklı (MCDM başarısı en yüksek olacak şekilde) değerlendirip israfları engellemektedir. Çıktıların bütçe performansına dönük olması sayesinde finansal anlamda gereksiz harcamaların, verimsiz tüketim alışkanlıklarının engellenmesi teşvik edilmekte, böylece ekonomik açıdan son derece sorumlu bir tüketim davranışı desteklenmektedir.")
 
-doc.save('/Users/oguzhandikmen/Downloads/tezproje/ENM458_Ara_Rapor.docx')
+doc.save('ENM458_Ara_Rapor.docx')
+print("ENM458_Ara_Rapor.docx başarıyla oluşturuldu!")

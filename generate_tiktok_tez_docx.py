@@ -437,6 +437,6 @@ risks = [
 for r, row in enumerate(risks):
     for c, v in enumerate(row): cell_style(t6.rows[r+1].cells[c], v, size=10)
 
-path = '/Users/oguzhandikmen/Downloads/tezproje/ENM458_Ara_Rapor_tiktok.docx'
+path = 'ENM458_Ara_Rapor_tiktok.docx'
 doc.save(path)
 print(f'✅ Kaydedildi: {path}')
