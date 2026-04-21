@@ -639,118 +639,60 @@ def solve_knapsack_dp(
     n_select: int = 40,
 ) -> Tuple[List[bool], str]:
     """
-    0-1 Knapsack problemi — Dinamik Programlama (DP) çözümü.
-
-    Tam olarak n_select kişi seçerek toplam MCDM skorunu maksimize eder.
-    Gurobi veya herhangi bir harici çözücü gerektirmez.
-
-    Model:
-      MAX   Σᵢ score_i · xᵢ
-      s.t.  Σᵢ cost_i · xᵢ  ≤  budget
-            Σᵢ xᵢ            =  n_select
-            xᵢ ∈ {0, 1}
-
-    Yaklaşım:
-      - Maliyetler kuruş cinsine çevrilerek tamsayı DP tablosu oluşturulur
-      - 3 boyutlu DP: dp[i][k][c] = i. elemana kadar k kişi seçip c bütçe kullanarak
-        elde edilebilecek maksimum skor
-      - Bellek optimizasyonu: sadece önceki satır tutulur
-
-    Parametreler:
-        scores   : n boyutlu skor dizisi (float)
-        costs    : n boyutlu maliyet dizisi (float, TL)
-        budget   : bütçe limiti (float, TL)
-        n_select : seçilecek kişi sayısı (varsayılan 40)
-
-    Dönen:
-        (mask, status)
-        mask   : seçilen elemanların boolean listesi
-        status : "Optimal" veya "Infeasible"
+    MILP (SciPy Tabangı) ile Knapsack problemi çözümü.
+    Bellek limitleri (OOM) nedeniyle DP yerine SciPy MILP (HiGHS) kullanılmıştır.
+    Gurobi gerektirmez ve çok hızlıdır.
     """
     n = len(scores)
 
     if n < n_select:
-        # Yeterli aday yok → mümkün olanı seç
         n_select = n
 
-    # ── Maliyet diskretizasyonu ──────────────────────────────────────
-    # DP için maliyetleri tamsayıya çeviriyoruz
-    # 100 TL hassasiyetle → bütçe/100 boyutunda tablo
-    SCALE = 100  # 100 TL çözünürlük
-    int_costs  = np.array([max(1, int(round(c / SCALE))) for c in costs])
-    int_budget = int(budget / SCALE)
+    try:
+        from scipy.optimize import milp, LinearConstraint, Bounds
+    except ImportError:
+        # SciPy yoksa fallback - basit greedy yaklaşım
+        print("    ⚠️ SciPy bulunamadı! Greedy fallback kullanılıyor.")
+        sorted_idx = np.argsort(scores)[::-1]
+        mask = [False] * n
+        c_tot = 0
+        k_tot = 0
+        for i in sorted_idx:
+            if c_tot + costs[i] <= budget and k_tot < n_select:
+                mask[i] = True
+                c_tot += costs[i]
+                k_tot += 1
+        return mask, "Suboptimal (Greedy)"
 
-    # ── DP Tablosu ───────────────────────────────────────────────────
-    # dp[k][c] = k kişi seçip c bütçe kullanarak elde edilebilecek max skor
-    # Boyut: (n_select+1) × (int_budget+1)
-    # -inf ile başlat (geçersiz durumlar)
-    NEG_INF = -1e18
+    # milp minimizes c^T * x
+    c = -scores
 
-    # Bellek optimizasyonu: sadece mevcut dp ve önceki dp tutulur
-    # Her eleman için dp tablosunu güncelliyoruz
-    dp   = [[NEG_INF] * (int_budget + 1) for _ in range(n_select + 1)]
-    # parent[i][k][c] → i. elemanda seçim yapıldı mı (backtrack için)
-    # Bellek tasarrufu: ayrı bir backtrack stratejisi kullan
-    dp[0][0] = 0.0  # 0 kişi, 0 maliyet → skor 0
+    # Constraints:
+    # 1. cost * x <= budget
+    # 2. 1 * x <= n_select (or == n_select if possible)
+    # We will try to pick EXACTLY n_select elements. 
+    # If it's infeasible, we will pick as many as possible (obj: maximize total score 
+    # where all items implicitly try to get selected, but bound limits to n_select).
+    # Since we want to maximize score, picking fewer than n_select only happens if budget is tight.
+    
+    A = np.vstack([costs, np.ones(n)])
+    
+    # We allow fewer than n_select items if budget is too small
+    # thus sum(x) can be between 0 and n_select
+    b_l = np.array([-np.inf, 0])
+    b_u = np.array([budget, n_select])
 
-    # Seçimleri kaydet (backtracking için)
-    choice = [[[False] * (int_budget + 1) for _ in range(n_select + 1)]
-              for _ in range(n)]
+    constraints = LinearConstraint(A, b_l, b_u)
+    integrality = np.ones(n, dtype=int)
+    bounds = Bounds(0, 1)
 
-    for i in range(n):
-        # Tersten tarayarak aynı elemanın birden fazla seçilmesini engelle
-        for k in range(min(i + 1, n_select), 0, -1):
-            for c in range(int_budget, int_costs[i] - 1, -1):
-                new_val = dp[k - 1][c - int_costs[i]] + scores[i]
-                if new_val > dp[k][c]:
-                    dp[k][c] = new_val
-                    choice[i][k][c] = True
+    res = milp(c=c, constraints=constraints, integrality=integrality, bounds=bounds)
 
-    # ── En iyi çözümü bul ────────────────────────────────────────────
-    best_cost = -1
-    best_score = NEG_INF
-
-    for c in range(int_budget + 1):
-        if dp[n_select][c] > best_score:
-            best_score = dp[n_select][c]
-            best_cost = c
-
-    if best_score <= NEG_INF / 2:
-        # n_select kişi bütçeye sığmıyor → daha az kişiyle dene
-        # En fazla kaç kişi sığıyor?
-        best_k = 0
-        for k in range(n_select, 0, -1):
-            for c in range(int_budget + 1):
-                if dp[k][c] > NEG_INF / 2:
-                    best_k = k
-                    break
-            if best_k > 0:
-                break
-
-        if best_k == 0:
-            return [False] * n, "Infeasible"
-
-        # best_k kişi ile en iyi çözümü bul
-        n_select = best_k
-        best_cost = -1
-        best_score = NEG_INF
-        for c in range(int_budget + 1):
-            if dp[n_select][c] > best_score:
-                best_score = dp[n_select][c]
-                best_cost = c
-
-    # ── Backtracking — hangi elemanlar seçildi ───────────────────────
-    mask = [False] * n
-    k_rem = n_select
-    c_rem = best_cost
-
-    for i in range(n - 1, -1, -1):
-        if k_rem > 0 and c_rem >= 0 and choice[i][k_rem][c_rem]:
-            mask[i] = True
-            c_rem -= int_costs[i]
-            k_rem -= 1
-
-    return mask, "Optimal"
+    if res.success:
+        mask = np.round(res.x).astype(bool).tolist()
+        return mask, "Optimal"
+    else:
+        return [False] * n, "Infeasible"
 
 
 def optimize_portfolio_knapsack(
