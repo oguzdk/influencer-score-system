@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-AHP (Analytic Hierarchy Process) ve ANP (Analytic Network Process)
+AHP (Analytic Hierarchy Process)
 Ağırlık Hesaplama Modülü
 =================================================================
 Lisans Tezi: "TikTok'ta Etkili Marka İş Birliği için İçerik Üreticisi
@@ -11,7 +11,6 @@ Bu modül, MCDM (Çok Kriterli Karar Verme) kriter ağırlıklarının
 sistematik olarak hesaplanmasını sağlar.
 
 AHP:  Saaty ölçeğinde (1-9) ikili karşılaştırma → eigen vector → ağırlıklar
-ANP:  AHP + kriterler arası bağımlılık (inner dependence) → süper matris → ağırlıklar
 
 Kriterler:
   C1: engagement_proxy    (Etkileşim Skoru)
@@ -231,155 +230,8 @@ def get_slider_pairs() -> List[Dict]:
 
 
 # =====================================================================
-# ANP — Analytic Network Process
-# =====================================================================
-
-def build_default_inner_dependence() -> np.ndarray:
-    """
-    Kriterler arası iç bağımlılık (inner dependence) matrisi.
-
-    ANP, AHP'den farklı olarak kriterler arasındaki etkileşimleri
-    de modelleyebilir. Örneğin:
-      - engagement_proxy ↔ like_per_follower (güçlü ilişki)
-      - followers ↔ cost_efficiency (takipçi ↑ → maliyet ↑)
-      - video_volume ↔ engagement_proxy (daha fazla video → daha fazla veri)
-
-    Matris: n×n, her hücre ilgili kriterin diğerine etkisi (0-1 arası).
-    Köşegen = 1 (kendi kendine etki).
-    """
-    #                          C1     C2     C3     C4     C5
-    inner_dep = np.array([
-        [1.00,  0.10,  0.60,  0.15,  0.20],   # C1 → diğerlerine etkisi
-        [0.10,  1.00,  0.15,  0.50,  0.05],   # C2 → diğerlerine etkisi
-        [0.60,  0.15,  1.00,  0.20,  0.10],   # C3 → diğerlerine etkisi
-        [0.15,  0.50,  0.20,  1.00,  0.05],   # C4 → diğerlerine etkisi
-        [0.20,  0.05,  0.10,  0.05,  1.00],   # C5 → diğerlerine etkisi
-    ], dtype=float)
-
-    return inner_dep
-
-
-def compute_anp_weights(
-    pairwise_matrix: np.ndarray,
-    inner_dependence: Optional[np.ndarray] = None,
-    max_power: int = 50,
-    tol: float = 1e-8
-) -> Dict:
-    """
-    ANP ağırlık hesaplama — Süper Matris yaklaşımı.
-
-    ANP, AHP ağırlıklarını kriterler arası bağımlılıklarla düzeltir.
-
-    Adımlar:
-    1. AHP ile temel ağırlıkları hesapla (W_ahp)
-    2. İç bağımlılık matrisini normalize et (D)
-    3. Ağırlıklı süper matris oluştur: W_super = D_normalized × W_ahp_diag
-    4. Limit süper matrisi hesapla: W_super^k (k→∞)
-    5. Sonuç: kararlı haldeki ağırlıklar
-
-    Parametreler:
-        pairwise_matrix  : n×n AHP ikili karşılaştırma matrisi
-        inner_dependence : n×n kriterler arası iç bağımlılık matrisi
-        max_power        : süper matris üs alma iterasyon limiti
-        tol              : yakınsama toleransı
-
-    Dönen:
-        {
-            "weights"        : {kriter_adı: ağırlık},
-            "weights_arr"    : np.ndarray,
-            "ahp_weights"    : AHP ağırlıkları (karşılaştırma için),
-            "adjustment"     : ANP düzeltme oranları,
-            "supermatrix"    : limit süper matris
-        }
-    """
-    n = pairwise_matrix.shape[0]
-
-    # Adım 1: AHP ağırlıklarını hesapla
-    ahp_result = compute_ahp_weights(pairwise_matrix)
-    w_ahp = ahp_result["weights_arr"]
-
-    if inner_dependence is None:
-        inner_dependence = build_default_inner_dependence()
-
-    # Adım 2: İç bağımlılık matrisini sütun-normalize et
-    d_norm = inner_dependence.copy()
-    for j in range(n):
-        col_sum = d_norm[:, j].sum()
-        if col_sum > 0:
-            d_norm[:, j] = d_norm[:, j] / col_sum
-
-    # Adım 3: Ağırlıklı süper matris oluştur
-    # W_super = D_normalized × diag(W_ahp)
-    w_super = d_norm @ np.diag(w_ahp)
-
-    # Sütun normalize et
-    for j in range(n):
-        col_sum = w_super[:, j].sum()
-        if col_sum > 0:
-            w_super[:, j] = w_super[:, j] / col_sum
-
-    # Adım 4: Limit süper matris hesapla (W^k → kararlı hal)
-    w_limit = w_super.copy()
-    for _ in range(max_power):
-        w_new = w_limit @ w_limit
-        # Sütun normalize et
-        for j in range(n):
-            col_sum = w_new[:, j].sum()
-            if col_sum > 0:
-                w_new[:, j] = w_new[:, j] / col_sum
-
-        if np.max(np.abs(w_new - w_limit)) < tol:
-            break
-        w_limit = w_new
-
-    # Adım 5: Kararlı ağırlıkları çıkar (herhangi bir sütun aynı)
-    anp_weights = w_limit[:, 0]
-    anp_weights = anp_weights / anp_weights.sum()
-
-    # Düzeltme oranları
-    adjustment = {}
-    weight_dict = {}
-    for i, name in enumerate(CRITERIA_NAMES[:n]):
-        weight_dict[name] = round(float(anp_weights[i]), 4)
-        ahp_w = float(w_ahp[i])
-        anp_w = float(anp_weights[i])
-        adj = ((anp_w - ahp_w) / ahp_w * 100) if ahp_w > 0 else 0.0
-        adjustment[name] = round(adj, 2)
-
-    return {
-        "weights":      weight_dict,
-        "weights_arr":  anp_weights,
-        "ahp_weights":  ahp_result["weights"],
-        "adjustment":   adjustment,
-        "supermatrix":  w_limit,
-    }
-
-
-# =====================================================================
 # YARDIMCI FONKSİYONLAR
 # =====================================================================
-
-def format_comparison_table(ahp_result: Dict, anp_result: Dict) -> List[Dict]:
-    """
-    AHP ve ANP ağırlıklarını karşılaştırma tablosu olarak formatlar.
-    Streamlit'te pd.DataFrame olarak gösterilecek.
-    """
-    rows = []
-    for name in CRITERIA_NAMES:
-        ahp_w = ahp_result["weights"].get(name, 0)
-        anp_w = anp_result["weights"].get(name, 0)
-        adj   = anp_result["adjustment"].get(name, 0)
-
-        rows.append({
-            "Kriter": CRITERIA_LABELS_TR.get(name, name),
-            "AHP Ağırlığı": f"{ahp_w:.4f}",
-            "AHP (%)": f"%{ahp_w*100:.1f}",
-            "ANP Ağırlığı": f"{anp_w:.4f}",
-            "ANP (%)": f"%{anp_w*100:.1f}",
-            "Fark (%)": f"{adj:+.1f}%",
-        })
-
-    return rows
 
 
 def validate_pairwise_matrix(matrix: np.ndarray) -> Tuple[bool, str]:
@@ -422,7 +274,7 @@ def validate_pairwise_matrix(matrix: np.ndarray) -> Tuple[bool, str]:
 
 if __name__ == "__main__":
     print("=" * 62)
-    print("  AHP / ANP Ağırlık Hesaplama Testi")
+    print("  AHP Ağırlık Hesaplama Testi")
     print("=" * 62)
 
     # AHP Test
@@ -444,19 +296,3 @@ if __name__ == "__main__":
     for name, w in ahp_result["weights"].items():
         label = CRITERIA_LABELS_TR.get(name, name)
         print(f"    {label:25s} : {w:.4f}  (%{w*100:.1f})")
-
-    # ANP Test
-    anp_result = compute_anp_weights(matrix)
-    print(f"\n🔗 ANP Sonuçları (bağımlılık düzeltmeli):")
-    print(f"  Ağırlıklar:")
-    for name, w in anp_result["weights"].items():
-        label = CRITERIA_LABELS_TR.get(name, name)
-        adj = anp_result["adjustment"].get(name, 0)
-        print(f"    {label:25s} : {w:.4f}  (%{w*100:.1f})  [{adj:+.1f}% düzeltme]")
-
-    # Karşılaştırma tablosu
-    print(f"\n📋 AHP vs ANP Karşılaştırma:")
-    table = format_comparison_table(ahp_result, anp_result)
-    for row in table:
-        print(f"  {row['Kriter']:25s}  AHP={row['AHP (%)']:>6s}  "
-              f"ANP={row['ANP (%)']:>6s}  Fark={row['Fark (%)']:>7s}")

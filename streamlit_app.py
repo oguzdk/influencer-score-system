@@ -20,18 +20,18 @@ except Exception as e:
 # Import AHP/ANP module
 try:
     from ahp_anp import (
-        compute_ahp_weights, compute_anp_weights,
-        build_default_pairwise_matrix, build_default_inner_dependence,
+        compute_ahp_weights,
+        build_default_pairwise_matrix,
         pairwise_from_sliders, get_slider_pairs,
-        format_comparison_table, validate_pairwise_matrix,
+        validate_pairwise_matrix,
         CRITERIA_NAMES, CRITERIA_LABELS_TR
     )
 except Exception as e:
-    st.error(f"AHP/ANP import hatası: {e}")
+    st.error(f"AHP import hatası: {e}")
     st.stop()
 
 st.set_page_config(
-    page_title="TikTok Influencer Seçimi — AHP/ANP + Knapsack",
+    page_title="TikTok Influencer Seçimi — AHP + Knapsack",
     page_icon="📊",
     layout="wide"
 )
@@ -56,7 +56,7 @@ st.markdown("""
 
 st.markdown('<p class="main-title">📊 TikTok Influencer Marketing — Optimizasyon Sistemi</p>',
             unsafe_allow_html=True)
-st.markdown("AHP/ANP ağırlık hesaplama • Gurobi ILP & Knapsack DP")
+st.markdown("AHP Ağırlık Hesaplama • Gurobi ILP & Knapsack DP")
 st.markdown("---")
 
 
@@ -122,22 +122,46 @@ blacklist = st.sidebar.multiselect("Influencer Seç", all_users)
 # =====================================================================
 
 st.sidebar.markdown("---")
-st.sidebar.header("📐 AHP/ANP Ağırlık Hesaplama")
+st.sidebar.header("📐 AHP Ağırlık Hesaplama")
 
 slider_pairs = get_slider_pairs()
 
 ahp_use_custom = st.sidebar.checkbox("Özel AHP ağırlıkları kullan", value=True)
 
+saaty_options = [
+    "9 (Sol)", "8 (Sol)", "7 (Sol)", "6 (Sol)", "5 (Sol)", "4 (Sol)", "3 (Sol)", "2 (Sol)", 
+    "1 (Eşit)", 
+    "2 (Sağ)", "3 (Sağ)", "4 (Sağ)", "5 (Sağ)", "6 (Sağ)", "7 (Sağ)", "8 (Sağ)", "9 (Sağ)"
+]
+
+def map_val_to_opt(val):
+    if val >= 1:
+        v = int(round(val))
+        return "1 (Eşit)" if v == 1 else f"{v} (Sol)"
+    else:
+        v = int(round(1/val))
+        return f"{v} (Sağ)"
+
+def map_opt_to_val(opt):
+    if "Eşit" in opt:
+        return 1.0
+    v = int(opt.split()[0])
+    return float(v) if "(Sol)" in opt else 1.0 / v
+
 slider_values = {}
 if ahp_use_custom:
     for pair in slider_pairs:
-        val = st.sidebar.slider(
+        default_opt = map_val_to_opt(float(pair["default"]))
+        if default_opt not in saaty_options:
+            default_opt = "1 (Eşit)"
+        
+        selected_opt = st.sidebar.select_slider(
             pair["label"],
-            min_value=1/9, max_value=9.0,
-            value=float(pair["default"]), step=0.5,
+            options=saaty_options,
+            value=default_opt,
             key=pair["key"],
         )
-        slider_values[pair["key"]] = val
+        slider_values[pair["key"]] = map_opt_to_val(selected_opt)
 
 # AHP Hesaplama
 if ahp_use_custom and slider_values:
@@ -147,8 +171,6 @@ else:
 
 valid, valid_msg = validate_pairwise_matrix(ahp_matrix)
 ahp_result = compute_ahp_weights(ahp_matrix)
-inner_dep = build_default_inner_dependence()
-anp_result = compute_anp_weights(ahp_matrix, inner_dep)
 
 # CR göstergesi
 st.sidebar.markdown("---")
@@ -161,133 +183,86 @@ else:
 
 st.sidebar.markdown(f"**λ_max** = {ahp_result['lambda_max']}  |  **CI** = {ahp_result['ci']}")
 
-weight_source = st.sidebar.radio(
-    "Kullanılacak ağırlık yöntemi", ["AHP", "ANP"], index=0
-)
-
-if weight_source == "AHP":
-    active_weights = ahp_result["weights"]
-else:
-    active_weights = anp_result["weights"]
-
-
-# =====================================================================
-# ANA ALAN — SEKMELER
-# =====================================================================
-
-tab_weights, tab_results = st.tabs(["📐 AHP/ANP Ağırlıklar", "💡 Optimizasyon Sonuçları"])
-
-with tab_weights:
-    st.subheader("AHP vs ANP Kriter Ağırlıkları Karşılaştırması")
-
-    comparison_data = format_comparison_table(ahp_result, anp_result)
-    comp_df = pd.DataFrame(comparison_data)
-    st.dataframe(comp_df, use_container_width=True, hide_index=True)
-
-    col_a, col_b = st.columns(2)
-    with col_a:
-        st.markdown("#### AHP Ağırlıkları")
-        ahp_chart_df = pd.DataFrame({
-            "Kriter": [CRITERIA_LABELS_TR[c] for c in CRITERIA_NAMES],
-            "Ağırlık": [ahp_result["weights"][c] for c in CRITERIA_NAMES]
-        })
-        st.bar_chart(ahp_chart_df.set_index("Kriter"), color="#667eea")
-
-    with col_b:
-        st.markdown("#### ANP Ağırlıkları")
-        anp_chart_df = pd.DataFrame({
-            "Kriter": [CRITERIA_LABELS_TR[c] for c in CRITERIA_NAMES],
-            "Ağırlık": [anp_result["weights"][c] for c in CRITERIA_NAMES]
-        })
-        st.bar_chart(anp_chart_df.set_index("Kriter"), color="#764ba2")
-
-    with st.expander("📋 İkili Karşılaştırma Matrisi (AHP)"):
-        matrix_labels = [CRITERIA_LABELS_TR[c] for c in CRITERIA_NAMES]
-        matrix_df = pd.DataFrame(ahp_matrix, columns=matrix_labels, index=matrix_labels)
-        st.dataframe(matrix_df.style.format("{:.2f}"), use_container_width=True)
-
-    st.info(f"**Aktif ağırlık yöntemi: {weight_source}** — "
-            f"Bu ağırlıklar optimizasyon çalıştırıldığında MCDM skorunu hesaplamak için kullanılacaktır.")
+active_weights = ahp_result["weights"]
 
 
 # =====================================================================
 # OPTİMİZASYON SONUÇLARI
 # =====================================================================
 
-with tab_results:
-    btn_label = "🚀 Algoritmayı Çalıştır" + (f" ({max_kisi} Kişi)" if max_kisi > 0 else " (Sınırsız)")
-    if st.button(btn_label, type="primary", use_container_width=True):
-        Tiktokoptimizerphase2v3gurobi.BLACKLIST = blacklist
+btn_label = "🚀 Algoritmayı Çalıştır" + (f" ({max_kisi} Kişi)" if max_kisi > 0 else " (Sınırsız)")
+if st.button(btn_label, type="primary", use_container_width=True):
+    Tiktokoptimizerphase2v3gurobi.BLACKLIST = blacklist
 
-        with st.spinner(f"{algorithm} çözülüyor... Lütfen bekleyin."):
-            try:
-                req_cats = selected_categories if len(selected_categories) > 0 else None
+    with st.spinner(f"{algorithm} çözülüyor... Lütfen bekleyin."):
+        try:
+            req_cats = selected_categories if len(selected_categories) > 0 else None
 
-                if algorithm == "Gurobi ILP":
-                    gurobi_max = max_kisi if max_kisi > 0 else None
-                    result = optimize_portfolio(
-                        df, budget_tl=budget,
-                        min_influencers=1,
-                        max_influencers=gurobi_max,
-                        required_categories=req_cats,
-                        label="Gurobi", verbose=False
-                    )
-                else:
-                    ks_n = max_kisi if max_kisi > 0 else len(df)
-                    result = optimize_portfolio_knapsack(
-                        df, budget_tl=budget,
-                        n_select=ks_n,
-                        required_categories=req_cats,
-                        label="Knapsack", verbose=False,
-                        criterion_weights=active_weights
-                    )
+            if algorithm == "Gurobi ILP":
+                gurobi_max = max_kisi if max_kisi > 0 else None
+                result = optimize_portfolio(
+                    df, budget_tl=budget,
+                    min_influencers=1,
+                    max_influencers=gurobi_max,
+                    required_categories=req_cats,
+                    label="Gurobi", verbose=False
+                )
+            else:
+                ks_n = max_kisi if max_kisi > 0 else len(df)
+                result = optimize_portfolio_knapsack(
+                    df, budget_tl=budget,
+                    n_select=ks_n,
+                    required_categories=req_cats,
+                    label="Knapsack", verbose=False,
+                    criterion_weights=active_weights
+                )
 
-                if result["status"] in ["Optimal", "Suboptimal", "TimeLimit"]:
-                    st.success(f"✅ Optimizasyon Başarılı! ({algorithm} — {result['status']})")
-                    sel_df = result["selected"]
-                    n_sel = result["n_selected"]
-                    tot_cost = result["total_cost"]
-                    tot_score = result["total_score"]
+            if result["status"] in ["Optimal", "Suboptimal", "TimeLimit"]:
+                st.success(f"✅ Optimizasyon Başarılı! ({algorithm} — {result['status']})")
+                sel_df = result["selected"]
+                n_sel = result["n_selected"]
+                tot_cost = result["total_cost"]
+                tot_score = result["total_score"]
 
-                    col1, col2, col3, col4 = st.columns(4)
-                    col1.metric("👥 Kişi Sayısı", n_sel)
-                    col2.metric("💰 Harcanan Bütçe", f"{tot_cost:,.0f} TL",
-                                f"{budget - tot_cost:,.0f} TL Kaldı", delta_color="normal")
-                    col3.metric("📊 Toplam MCDM Skoru", f"{tot_score:.2f}")
-                    col4.metric("🔧 Algoritma", algorithm)
+                col1, col2, col3, col4 = st.columns(4)
+                col1.metric("👥 Kişi Sayısı", n_sel)
+                col2.metric("💰 Harcanan Bütçe", f"{tot_cost:,.0f} TL",
+                            f"{budget - tot_cost:,.0f} TL Kaldı", delta_color="normal")
+                col3.metric("📊 Toplam MCDM Skoru", f"{tot_score:.2f}")
+                col4.metric("🔧 Algoritma", algorithm)
 
-                    st.markdown("---")
-                    weight_str = " • ".join(
-                        [f"{CRITERIA_LABELS_TR.get(k, k)}: %{v*100:.1f}"
-                         for k, v in active_weights.items()]
-                    )
-                    st.caption(f"Ağırlıklar ({weight_source}): {weight_str}")
+                st.markdown("---")
+                weight_str = " • ".join(
+                    [f"{CRITERIA_LABELS_TR.get(k, k)}: %{v*100:.1f}"
+                     for k, v in active_weights.items()]
+                )
+                st.caption(f"Ağırlıklar (AHP): {weight_str}")
 
-                    st.markdown("---")
-                    st.subheader(f"💡 Önerilen Influencerlar ({n_sel} Kişi)")
+                st.markdown("---")
+                st.subheader(f"💡 Önerilen Influencerlar ({n_sel} Kişi)")
 
-                    grid_cols = st.columns(4)
-                    for idx, (_, row) in enumerate(sel_df.iterrows()):
-                        with grid_cols[idx % 4]:
-                            img_path = row.get("screenshot_cropped_path", "")
-                            if pd.notna(img_path) and img_path and os.path.exists(str(img_path)):
-                                img = Image.open(str(img_path))
-                                st.image(img, caption="", use_container_width=True)
-                            else:
-                                st.info("Fotoğraf Bulunamadı")
+                grid_cols = st.columns(4)
+                for idx, (_, row) in enumerate(sel_df.iterrows()):
+                    with grid_cols[idx % 4]:
+                        img_path = row.get("screenshot_cropped_path", "")
+                        if pd.notna(img_path) and img_path and os.path.exists(str(img_path)):
+                            img = Image.open(str(img_path))
+                            st.image(img, caption="", use_container_width=True)
+                        else:
+                            st.info("Fotoğraf Bulunamadı")
 
-                            st.markdown(f"### @{row['username']}")
-                            st.markdown(f"**Kategori:** {row['category']}")
-                            st.markdown(f"**Takipçi:** {row['followers']:,.0f}")
-                            st.markdown(f"**Maliyet:** {row['estimated_cost_tl']:,.0f} TL")
-                            st.markdown(f"**Skor:** {row['mcdm_score']:.3f}")
-                            st.markdown("---")
+                        st.markdown(f"### @{row['username']}")
+                        st.markdown(f"**Kategori:** {row['category']}")
+                        st.markdown(f"**Takipçi:** {row['followers']:,.0f}")
+                        st.markdown(f"**Maliyet:** {row['estimated_cost_tl']:,.0f} TL")
+                        st.markdown(f"**Skor:** {row['mcdm_score']:.3f}")
+                        st.markdown("---")
 
-                else:
-                    st.error(f"Optimizasyon başarısız oldu. Durum: {result['status']}.")
-                    st.info("Öneri: Bütçenizi artırmayı veya kısıtlamaları esnetmeyi deneyin.")
+            else:
+                st.error(f"Optimizasyon başarısız oldu. Durum: {result['status']}.")
+                st.info("Öneri: Bütçenizi artırmayı veya kısıtlamaları esnetmeyi deneyin.")
 
-            except Exception as e:
-                st.error(f"Hata oluştu: {e}")
-                import traceback
-                st.code(traceback.format_exc())
+        except Exception as e:
+            st.error(f"Hata oluştu: {e}")
+            import traceback
+            st.code(traceback.format_exc())
